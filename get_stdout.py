@@ -7,7 +7,7 @@ def branch():
     name = os.name
     if name == "nt":
         command = ["git", "branch"]
-    print(name)
+    # print(name)
     result = subprocess.run(command, capture_output=True, text=True)
 
     return result.stdout

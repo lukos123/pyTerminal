@@ -5,7 +5,7 @@ from prompt_toolkit.completion import Completer, Completion
 from compile_functions import functions
 from data import PATH
 import os
-with open(f'{PATH}\\command.json', 'r') as f:
+with open(f'{PATH}/command.json', 'r') as f:
 
     data = json.load(f)
 

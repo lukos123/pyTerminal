@@ -31,7 +31,7 @@ path_to_pip = f'pip'
 session = PromptSession(completer=MyCompleter())
 
 path_to_git = f'git'
-npm_bat = f'{drive}\\runvueserver.bat'
+npm_bat = f'{drive}/runvueserver.bat'
 first_directory = args[1]
 
 os.chdir(first_directory)
@@ -64,9 +64,9 @@ def app():
 
 
             })
-            with open(f'{PATH}\\command.json', 'r') as f:
+            with open(f'{PATH}/command.json', 'r') as f:
                 completer.data = json.load(f)
-            playsound(f"{PATH}\\ok.mp3", False)
+            playsound(f"{PATH}/ok.mp3", False)
             if current_branch == "":
                 command = session.prompt(
                     HTML(f"<b><yellow>{now_directory}</yellow><violet>?</violet></b>"), completer=completer,

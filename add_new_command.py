@@ -22,11 +22,11 @@ def add(words: list[str]):
                 data[words[step]] = "N"
         return data
 
-    with open(f'{PATH}\\command.json', 'r') as f:
+    with open(f'{PATH}/command.json', 'r') as f:
         data = json.load(f)
 
     data = rec(0, words, data)
-    with open(f'{PATH}\\command.json', 'w') as f:
+    with open(f'{PATH}/command.json', 'w') as f:
         f.write(json.dumps(data))
 
 

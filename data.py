@@ -1,1 +1,1 @@
-PATH = "C:\\terminal"
+PATH = "C:/terminal"

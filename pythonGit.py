@@ -5,7 +5,7 @@ import os
 
 from prompt_toolkit import PromptSession, HTML
 from prompt_toolkit.styles import Style as St
-
+from data import PATH
 import subprocess
 import sys
 from playsound import playsound
@@ -64,9 +64,9 @@ def app():
 
 
             })
-            with open('C:\\terminal\\command.json', 'r') as f:
+            with open(f'{PATH}\\command.json', 'r') as f:
                 completer.data = json.load(f)
-            playsound("C:/terminal/ok.mp3", False)
+            playsound(f"{PATH}\\ok.mp3", False)
             if current_branch == "":
                 command = session.prompt(
                     HTML(f"<b><yellow>{now_directory}</yellow><violet>?</violet></b>"), completer=completer,

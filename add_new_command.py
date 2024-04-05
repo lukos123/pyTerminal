@@ -1,7 +1,6 @@
 import json
 
-
-
+from data import PATH
 
 
 def add(words: list[str]):
@@ -12,7 +11,8 @@ def add(words: list[str]):
                 if isinstance(data[words[step]], dict):
                     data[words[step]] = rec(step+1, words, data[words[step]])
                 else:
-                    data[words[step]] = rec(step+1, words, {words[step+1]: "N"})
+                    data[words[step]] = rec(
+                        step+1, words, {words[step+1]: "N"})
             else:
                 pass
         else:
@@ -21,16 +21,13 @@ def add(words: list[str]):
             else:
                 data[words[step]] = "N"
         return data
-    
-    with open('C:\\terminal\\command.json', 'r') as f:
+
+    with open(f'{PATH}\\command.json', 'r') as f:
         data = json.load(f)
 
     data = rec(0, words, data)
-    with open('C:\\terminal\\command.json', 'w') as f:
+    with open(f'{PATH}\\command.json', 'w') as f:
         f.write(json.dumps(data))
-
-
-
 
 
 # import add_new_command as a

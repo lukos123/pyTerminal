@@ -8,5 +8,9 @@ def branch():
     if name == "ne":
         command = "git branch"
     print(command)
-    result = subprocess.run(command, capture_output=True, text=True)
+    result: subprocess.CompletedProcess[str]
+    try:
+        result = subprocess.run(command, capture_output=True, text=True)
+    except:
+        pass
     return result.stdout

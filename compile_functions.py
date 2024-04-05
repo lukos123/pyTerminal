@@ -1,27 +1,22 @@
 import os
 import subprocess
 
-      
+from get_stdout import branch
+
 
 def git_branch():
-    arr =[]
-    command = "git branch"
-    result = subprocess.run(command, capture_output=True, text=True)
-    text = result.stdout
+    arr = []
+
+    text = branch()
     if text != "":
-      branches = text.split('\n')
-      for i in branches:
-          if i != "":
-            arr.append([i[2:],0])
-    
+        branches = text.split('\n')
+        for i in branches:
+            if i != "":
+                arr.append([i[2:], 0])
+
     return arr
-
-    
-
-
 
 
 functions = {
-    "git_branch":git_branch
+    "git_branch": git_branch
 }
-

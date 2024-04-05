@@ -13,6 +13,7 @@ import colorama
 from MyCompleter import MyCompleter
 
 import custom_functions
+from get_stdout import branch
 
 
 colorama.init()
@@ -41,9 +42,8 @@ def app():
     try:
 
         while True:
-            command = "git branch"
-            result = subprocess.run(command, capture_output=True, text=True)
-            text = result.stdout
+            
+            text = branch()
             current_branch = ""
             if text != "":
                 branches = text.split('\n')

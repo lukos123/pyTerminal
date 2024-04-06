@@ -42,7 +42,7 @@ def app():
     try:
 
         while True:
-            
+
             text = branch()
             current_branch = ""
             if text != "":
@@ -64,7 +64,11 @@ def app():
 
 
             })
-            with open(f'{PATH}/command.json', 'r') as f:
+            name =os.name
+            command_json = "command.json"
+            if name == 'posix':
+                command_json = "command_linuks.json"
+            with open(f'{PATH}/{command_json}', 'r') as f:
                 completer.data = json.load(f)
             playsound(f"{PATH}/ok.mp3", False)
             if current_branch == "":

@@ -1,4 +1,5 @@
 import json
+import os
 
 from data import PATH
 
@@ -21,12 +22,15 @@ def add(words: list[str]):
             else:
                 data[words[step]] = "N"
         return data
-
-    with open(f'{PATH}/command.json', 'r') as f:
+    name =os.name
+    command_json = "command.json"
+    if name == "posix":
+        command_json = "command_linuks.json"
+    with open(f'{PATH}/{command_json}', 'r') as f:
         data = json.load(f)
 
     data = rec(0, words, data)
-    with open(f'{PATH}/command.json', 'w') as f:
+    with open(f'{PATH}/{command_json}', 'w') as f:
         f.write(json.dumps(data))
 
 

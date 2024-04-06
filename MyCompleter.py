@@ -5,7 +5,11 @@ from prompt_toolkit.completion import Completer, Completion
 from compile_functions import functions
 from data import PATH
 import os
-with open(f'{PATH}/command.json', 'r') as f:
+name =os.name 
+command_json = "command.json"
+if name== "posix":
+    command_json = "command_linuks.json"
+with open(f'{PATH}/{command_json}', 'r') as f:
 
     data = json.load(f)
 

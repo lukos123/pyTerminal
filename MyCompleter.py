@@ -5,9 +5,9 @@ from prompt_toolkit.completion import Completer, Completion
 from compile_functions import functions
 from data import PATH
 import os
-name =os.name 
+name = os.name
 command_json = "command.json"
-if name== "posix":
+if name == "posix":
     command_json = "command_linuks.json"
 with open(f'{PATH}/{command_json}', 'r') as f:
 
@@ -15,7 +15,9 @@ with open(f'{PATH}/{command_json}', 'r') as f:
 
 
 class MyCompleter(Completer):
+
     data = data
+
     def get_completions(self, document, complete_event):
 
         text_before_cursor = document.text_before_cursor
@@ -29,15 +31,82 @@ class MyCompleter(Completer):
 
         def code_generator(nesting, obj, current_word, text_before_cursor, words):
             ready_arr = []
-            files = []
-            folders = []
+            temp_ready_arr = []
 
+            find = False
+            if "c_all" in obj:
+                for i in obj:
+                    if "c_all" == i:
+                        continue
+
+                    if nesting < len(words):
+                        if not isinstance(obj["c_all"], dict):
+                            name_function = obj["c_all"]
+
+                            temp_arr = functions[name_function](
+                            )
+                            if f"c_all_c_addon" in obj:
+                                for r in obj[f"c_all_c_addon"]:
+                                    temp_arr.append(r)
+                            temp_obj = {}
+                            for r in temp_arr:
+                                if r == "c_all":
+                                    temp_obj[r] = obj[f"c_all_c_addon"][r]
+                                    continue
+                                temp_obj[r] = "N"
+
+                            arr = code_generator(nesting+1, temp_obj, current_word,
+                                                 text_before_cursor, words)
+                            ready_arr = ready_arr + arr
+                        else:
+
+                            arr = code_generator(nesting+1, obj["c_all"], current_word,
+                                                 text_before_cursor, words)
+                            ready_arr = ready_arr + arr
+                        break
+                    elif nesting == len(words):
+                        if text_before_cursor[-1] == " ":
+                            if not isinstance(obj["c_all"], dict):
+                                name_function = obj["c_all"]
+
+                                temp_arr = functions[name_function](
+                                )
+
+                                if f"c_all_c_addon" in obj:
+                                    for r in obj[f"c_all_c_addon"]:
+                                        if "c_all" == r:
+                                            continue
+                                        temp_arr.append(r)
+
+                                if temp_arr:
+                                    for r in temp_arr:
+                                        ready_arr.append(
+                                            [r, 0])
+                            else:
+                                for r in obj["c_all"]:
+                                    ready_arr.append([r, 0])
+                            break
+                        else:
+
+                            if words[nesting-1] in i:
+                                if words[nesting-1] != i:
+                                    ready_arr.append(
+                                        [i, -len(current_word)])
+
+                    # elif nesting == len(words)-1:
+
+                return ready_arr
             for i in obj:
+
+                if "_c_addon" in i:
+
+                    continue
 
                 if words[nesting-1] in i:
                     if words[nesting-1] != i:
-                        ready_arr.append([i, -len(current_word)])
+                        temp_ready_arr.append([i, -len(current_word)])
                     else:
+                        find = True
                         if obj[i] != 'N':
 
                             if len(words) == nesting:
@@ -46,36 +115,72 @@ class MyCompleter(Completer):
                                     if isinstance(obj[i], dict):
 
                                         for i1 in obj[i]:
+                                            if "_c_addon" in i1:
+                                                continue
                                             ready_arr.append([i1, 0])
                                     else:
                                         name_function = obj[i]
 
                                         temp_arr = functions[name_function](
                                         )
+
+                                        if f"{i}_c_addon" in obj:
+                                            for r in obj[f"{i}_c_addon"]:
+                                                if "c_all" == r:
+                                                    continue
+                                                temp_arr.append(r)
+
                                         if temp_arr:
+                                            for r in temp_arr:
+                                                ready_arr.append(
+                                                    [r, 0])
 
-                                            ready_arr = ready_arr+temp_arr
+                                    # ready_arr = ready_arr+temp_arr
 
-                            elif isinstance(obj[i], str):
-
-                                name_function = obj[i]
-
-                                temp_arr = functions[name_function](
-                                )
-
-                                for r in temp_arr:
-                                    if current_word in r[0]:
-                                        if current_word != r[0]:
-                                            ready_arr.append(
-                                                [r[0], -len(current_word)])
                             else:
+                                if isinstance(obj[i], str):
 
-                                arr = code_generator(nesting+1, obj[i], current_word,
-                                                     text_before_cursor, words)[0]
-                                ready_arr = ready_arr + arr
+                                    name_function = obj[i]
+
+                                    temp_arr = functions[name_function](
+                                    )
+                                    if f"{i}_c_addon" in obj:
+                                        for r in obj[f"{i}_c_addon"]:
+                                            temp_arr.append(r)
+                                    temp_obj = {}
+                                    for r in temp_arr:
+                                        if r == "c_all" or r == "c_all_c_addon":
+                                            temp_obj[r] = obj[f"{i}_c_addon"][r]
+                                            continue
+
+                                        temp_obj[r] = "N"
+                                    arr = code_generator(nesting+1, temp_obj, current_word,
+                                                         text_before_cursor, words)
+                                    ready_arr = ready_arr + arr
+                                    # for r in temp_arr:
+                                    #     if words[nesting] in r:
+                                    #         if words[nesting] != r:
+                                    #             ready_arr.append(
+                                    #                 [r, -len(words[nesting])])
+                                    # else:
+
+                                    #     if f"{i}_c_all" in obj:
+                                    #         if isinstance(obj[f"{i}_c_all"], dict):
+
+                                    #             arr = code_generator(nesting+1, obj[f"{i}_c_all"], current_word,
+                                    #                                  text_before_cursor, words)[0]
+                                    #             ready_arr = ready_arr + arr
+                                else:
+
+                                    arr = code_generator(nesting+1, obj[i], current_word,
+                                                         text_before_cursor, words)
+                                    ready_arr = ready_arr + arr
                         else:
                             pass
-            return ready_arr, files, folders
+
+            if not find:
+                ready_arr = temp_ready_arr
+            return ready_arr
         if len(words) > 0:
             if words[0] == '?':
                 for i in self.data:
@@ -83,8 +188,8 @@ class MyCompleter(Completer):
 
             # print(self.data)
 
-            ready_arr, files, folders = code_generator(1, self.data, current_word,
-                                                       text_before_cursor, words)
+            ready_arr = code_generator(1, self.data, current_word,
+                                       text_before_cursor, words)
             for i in ready_arr:
                 yield Completion(i[0], start_position=i[1], style='bg:#000 fg:blue')
             if text_before_cursor[::-1].find("\\. ") != -1:
@@ -178,10 +283,3 @@ class MyCompleter(Completer):
                                 yield Completion(i[0], start_position=i[1], style='bg:#000 fg:yellow')
                             for i in files:
                                 yield Completion(i[0], start_position=i[1], style='bg:#000 fg:cyan')
-
-            else:
-
-                for i in files:
-                    yield Completion(i[0], start_position=i[1], style='bg:#000 fg:cyan')
-                for i in folders:
-                    yield Completion(i[0], start_position=i[1], style='bg:#000 fg:yellow')

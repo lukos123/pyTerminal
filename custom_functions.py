@@ -84,6 +84,10 @@ def add_new_command(command):
     anc.add(command[1:len(command)])
     print("added")
 
+def add_new_command_f(command):
+    anc.addf(command[1:len(command)])
+    print("added")
+
 
 
 def html(command, now_directory, path_to_git):

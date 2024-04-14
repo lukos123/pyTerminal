@@ -79,22 +79,47 @@
     "add": { ".": "N" },
     "commit": { "-m": { "\"commitMassage\"": "N" } },
     "status": "N",
-    "branch": {
-      "second": "N",
-      "-d": { "second": "N" },
-      "-D": { "second": "N" },
-      "-a": { "second": "N" },
-      "-m": { "second": "N" }
+    "branch": "git_branch",
+    "branch_c_addon": {
+      "-d": "N",
+      "-D": "N",
+      "-a": "N",
+      "-m": "N",
+      "c_all": "git_branch"
     },
-    "push": { "origin": "git_branch" },
-    "pull": { "origin": "git_branch" },
+    "push": "git_remote",
+    "push_c_addon": {
+      "c_all": "git_branch",
+      "c_all_c_addon": {
+        "--delete": "N",
+        "c_all": "git_branch"
+      }
+    },
+    "pull": "git_remote",
+    "pull_c_addon": { "c_all": "git_branch" },
     "checkout": "git_branch",
+    "checkout_c_addon": { "-b": "N", "c_all": { "name_branch": "N" } },
     "revert": "N",
     "log": { "--oneline": "N" },
     "remote": {
-      "add": { "origin": { "https://github.com/lukos123/pyTerminal.git": "N" } }
-    }
+      "add": "git_remote",
+      "add_c_addon": { "c_all": "git_repos_url" },
+      "set-url": "git_remote",
+      "set-url_c_addon": { "c_all": "git_repos_url" },
+      "-v": "N"
+    },
+    "config": {
+      "--global": {
+        "user.name": { "\"YourName\"": "N" },
+        "user.email": { "\"youremail@example.com\"": "N" },
+        "user.username": { "\"username\"": "N" }
+      }
+    },
+    "diff": "N",
+    "fetch": { "--dry-run": "N" },
+    "merge": "git_branch"
   },
   "add": "N",
-  "ng": { "new": { "my-app": "N" }, "serve": { "--open": "N" } }
+  "ng": { "new": { "my-app": "N" }, "serve": { "--open": "N" } },
+  "addf": "N"
 }

@@ -64,7 +64,7 @@ def app():
 
 
             })
-            name =os.name
+            name = os.name
             command_json = "command.json"
             if name == 'posix':
                 command_json = "command_linuks.json"
@@ -111,6 +111,8 @@ def app():
                     custom_functions.new(now_directory)
                 elif command[0] == 'add':
                     custom_functions.add_new_command(command)
+                elif command[0] == 'addf':
+                    custom_functions.add_new_command_f(command)
 
                 elif command[0] == 'pyinstaller':
 
@@ -130,4 +132,5 @@ if __name__ == '__main__':
         try:
             app()
         except Exception as t:
+            print("err")
             print(t)

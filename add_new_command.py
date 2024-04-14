@@ -4,25 +4,43 @@ import os
 from data import PATH
 
 
-def add(words: list[str]):
-    def rec(step: int, words: list[str], data):
-        id = words.index(words[step])
-        if words[step] in data:
+def add(words: list[str], is_f=False):
+    def rec(id: int, words: list[str], data):
+
+        # id = words.index(words[step])
+        if words[id] in data:
             if id < len(words)-1:
-                if isinstance(data[words[step]], dict):
-                    data[words[step]] = rec(step+1, words, data[words[step]])
+                if isinstance(data[words[id]], dict):
+                    data[words[id]] = rec(id+1, words, data[words[id]])
                 else:
-                    data[words[step]] = rec(
-                        step+1, words, {words[step+1]: "N"})
+                    if data[words[id]] != "N":
+                        if f"{words[id]}_c_addon" in data:
+                            if isinstance(data[f"{words[id]}_c_addon"], dict):
+                                data[f"{words[id]}_c_addon"] = rec(
+                                    id+1, words, data[f"{words[id]}_c_addon"])
+                            else:
+                                pass
+                        else:
+                            data[f"{words[id]}_c_addon"] = rec(
+                                id+1, words, {words[id+1]: "N"})
+                    else:
+                        data[words[id]] = rec(
+                            id+1, words, {words[id+1]: "N"})
             else:
-                pass
+                if is_f:
+                    data = words[id]
+
         else:
             if id < len(words)-1:
-                data[words[step]] = rec(step+1, words, {words[step+1]: "N"})
+                data[words[id]] = rec(id+1, words, {words[id+1]: "N"})
             else:
-                data[words[step]] = "N"
+                if is_f:
+                    data = words[id]
+                else:
+                    data[words[id]] = "N"
+
         return data
-    name =os.name
+    name = os.name
     command_json = "command.json"
     if name == "posix":
         command_json = "command_linuks.json"
@@ -30,8 +48,13 @@ def add(words: list[str]):
         data = json.load(f)
 
     data = rec(0, words, data)
+
     with open(f'{PATH}/{command_json}', 'w') as f:
         f.write(json.dumps(data))
+
+
+def addf(words: list[str]):
+    add(words, is_f=True)
 
 
 # import add_new_command as a

@@ -10,7 +10,7 @@ import subprocess
 import sys
 from playsound import playsound
 import colorama
-from MyCompleter import MyCompleter
+from MyCompleter import MyCompleter, get_command_json
 
 import custom_functions
 from get_stdout import branch
@@ -58,18 +58,14 @@ def app():
             def bottom_toolbar():
                 return [('class:bottom-toolbar', '         Итс май апликатион!')]
             our_style = St.from_dict({
-                '':   '#0000FF bold',
+                '':   '#0099ff bold',
                 'bottom-toolbar': 'fg:#ffffff bg:#ff0000',
                 # 'sw':   '#fff bold',
 
 
             })
-            name = os.name
-            command_json = "command.json"
-            if name == 'posix':
-                command_json = "command_linuks.json"
-            with open(f'{PATH}/{command_json}', 'r') as f:
-                completer.data = json.load(f)
+
+            completer.data = get_command_json()
             playsound(f"{PATH}/ok.mp3", False)
             if current_branch == "":
                 command = session.prompt(

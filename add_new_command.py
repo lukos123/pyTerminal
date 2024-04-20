@@ -40,10 +40,9 @@ def add(words: list[str], is_f=False):
                     data[words[id]] = "N"
 
         return data
-    name = os.name
+
     command_json = "command.json"
-    if name == "posix":
-        command_json = "command_linuks.json"
+
     with open(f'{PATH}/{command_json}', 'r') as f:
         data = json.load(f)
 

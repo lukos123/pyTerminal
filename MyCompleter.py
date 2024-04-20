@@ -1,17 +1,29 @@
 
 
 import json
+from prompt_toolkit import HTML
 from prompt_toolkit.completion import Completer, Completion
 from compile_functions import functions
 from data import PATH
 import os
-name = os.name
-command_json = "command.json"
-if name == "posix":
-    command_json = "command_linuks.json"
-with open(f'{PATH}/{command_json}', 'r') as f:
 
-    data = json.load(f)
+
+def get_command_json():
+
+    name = os.name
+    command_json = "command.json"
+    command_json_OS = "command_windows.json"
+
+    if name == "posix":
+        command_json_OS = "command_linuks.json"
+    with open(f'{PATH}/{command_json}', 'r') as f:
+        command_json: dict = json.load(f)
+    with open(f'{PATH}/{command_json_OS}', 'r') as f:
+        command_json = {**command_json, **json.load(f)}
+    return command_json
+
+
+data = get_command_json()
 
 
 class MyCompleter(Completer):
@@ -36,7 +48,9 @@ class MyCompleter(Completer):
             find = False
             if "c_all" in obj:
                 for i in obj:
-                    if "c_all" == i:
+                    temp_i = i
+                    i = i.split(" ")[0]
+                    if "c_all" == temp_i:
                         continue
 
                     if nesting < len(words):
@@ -91,42 +105,43 @@ class MyCompleter(Completer):
                             if words[nesting-1] in i:
                                 if words[nesting-1] != i:
                                     ready_arr.append(
-                                        [i, -len(current_word)])
+                                        [temp_i, -len(current_word)])
 
                     # elif nesting == len(words)-1:
 
                 return ready_arr
             for i in obj:
-
-                if "_c_addon" in i:
+                temp_i = i
+                i = i.split(" ")[0]
+                if "_c_addon" in temp_i:
 
                     continue
 
                 if words[nesting-1] in i:
                     if words[nesting-1] != i:
-                        temp_ready_arr.append([i, -len(current_word)])
+                        temp_ready_arr.append([temp_i, -len(current_word)])
                     else:
                         find = True
-                        if obj[i] != 'N':
+                        if obj[temp_i] != 'N':
 
                             if len(words) == nesting:
                                 if text_before_cursor[-1] == ' ':
 
-                                    if isinstance(obj[i], dict):
+                                    if isinstance(obj[temp_i], dict):
 
-                                        for i1 in obj[i]:
+                                        for i1 in obj[temp_i]:
                                             if "_c_addon" in i1:
                                                 continue
                                             ready_arr.append([i1, 0])
                                     else:
-                                        name_function = obj[i]
+                                        name_function = obj[temp_i]
 
                                         temp_arr = functions[name_function](
                                         )
 
-                                        if f"{i}_c_addon" in obj:
-                                            for r in obj[f"{i}_c_addon"]:
-                                                if "c_all" == r:
+                                        if f"{temp_i}_c_addon" in obj:
+                                            for r in obj[f"{temp_i}_c_addon"]:
+                                                if "c_all" == r or "c_all_c_addon" == r:
                                                     continue
                                                 temp_arr.append(r)
 
@@ -138,19 +153,20 @@ class MyCompleter(Completer):
                                     # ready_arr = ready_arr+temp_arr
 
                             else:
-                                if isinstance(obj[i], str):
+                                if isinstance(obj[temp_i], str):
 
-                                    name_function = obj[i]
+                                    name_function = obj[temp_i]
 
                                     temp_arr = functions[name_function](
                                     )
-                                    if f"{i}_c_addon" in obj:
-                                        for r in obj[f"{i}_c_addon"]:
+
+                                    if f"{temp_i}_c_addon" in obj:
+                                        for r in obj[f"{temp_i}_c_addon"]:
                                             temp_arr.append(r)
                                     temp_obj = {}
                                     for r in temp_arr:
                                         if r == "c_all" or r == "c_all_c_addon":
-                                            temp_obj[r] = obj[f"{i}_c_addon"][r]
+                                            temp_obj[r] = obj[f"{temp_i}_c_addon"][r]
                                             continue
 
                                         temp_obj[r] = "N"
@@ -172,7 +188,7 @@ class MyCompleter(Completer):
                                     #             ready_arr = ready_arr + arr
                                 else:
 
-                                    arr = code_generator(nesting+1, obj[i], current_word,
+                                    arr = code_generator(nesting+1, obj[temp_i], current_word,
                                                          text_before_cursor, words)
                                     ready_arr = ready_arr + arr
                         else:
@@ -184,14 +200,21 @@ class MyCompleter(Completer):
         if len(words) > 0:
             if words[0] == '?':
                 for i in self.data:
-                    yield Completion(i, start_position=-1, style='bg:#000 fg:blue')
+                    yield Completion(i, start_position=-1, style='bg:#000 fg:#0099ff')
 
             # print(self.data)
 
             ready_arr = code_generator(1, self.data, current_word,
                                        text_before_cursor, words)
+            maximum = 0
             for i in ready_arr:
-                yield Completion(i[0], start_position=i[1], style='bg:#000 fg:blue')
+                if maximum < len(i[0].split(" ")[0]):
+                    maximum = len(i[0].split(" ")[0])+1
+            for i in ready_arr:
+                meta_text = (' '.join(i[0].split(' ')[1:])).replace(
+                    '<', '(').replace('>', ')')
+                yield Completion(i[0].split(" ")[0], start_position=i[1], style='bg:#000 fg:#0099ff', display=HTML(f"<b fg='#0099ff'>{i[0].split(' ')[0]}</b>{' '*(maximum-len(i[0].split(' ')[0]))}<b bg='#000'> <yellow>{meta_text}</yellow></b>"))
+
             if text_before_cursor[::-1].find("\\. ") != -1:
                 index = len(text_before_cursor)-2 - \
                     text_before_cursor[::-1].find("\\. ")

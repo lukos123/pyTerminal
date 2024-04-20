@@ -1,0 +1,7 @@
+{
+  "move": "N",
+  "copy": "N",
+  "cls": "N",
+  "xcopy": { "/E": "N" },
+  "del": "N"
+}

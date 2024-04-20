@@ -34,3 +34,13 @@ def git_get_remote():
     result = subprocess.run(command, capture_output=True, text=True)
 
     return result.stdout
+
+def python_get_library():
+    command = ["/usr/bin/pip", "list"]
+    name = os.name
+    if name == "nt":
+        command = ["pip", "list"]
+    
+    result = subprocess.run(command, capture_output=True, text=True)
+
+    return result.stdout

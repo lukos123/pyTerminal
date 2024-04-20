@@ -1,9 +1,11 @@
 
 
+import importlib
 import json
 from prompt_toolkit import HTML
 from prompt_toolkit.completion import Completer, Completion
-from compile_functions import functions
+import compile_functions 
+functions = compile_functions.functions
 from data import PATH
 import os
 
@@ -26,10 +28,32 @@ def get_command_json():
 data = get_command_json()
 
 
+def sort_by_similarity(arr, string):
+    ready_arr = []
+    temp_arr = []
+
+    for it in arr:
+        i = it[0]
+
+        try:
+            i = i.index(string)
+        except:
+            print(string, i)
+            return []
+        if i == 0:
+            ready_arr.append(it)
+            continue
+        temp_arr.append(it)
+    for i in temp_arr:
+        ready_arr.append(i)
+    return ready_arr
+
+
 class MyCompleter(Completer):
 
     data = data
-
+    def reload():
+        importlib.reload(compile_functions)
     def get_completions(self, document, complete_event):
 
         text_before_cursor = document.text_before_cursor
@@ -206,6 +230,8 @@ class MyCompleter(Completer):
 
             ready_arr = code_generator(1, self.data, current_word,
                                        text_before_cursor, words)
+            if text_before_cursor[-1] != " ":
+                ready_arr = sort_by_similarity(ready_arr, current_word)
             maximum = 0
             for i in ready_arr:
                 if maximum < len(i[0].split(" ")[0]):

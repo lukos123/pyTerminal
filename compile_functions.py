@@ -1,7 +1,7 @@
 import os
 import subprocess
 
-from get_stdout import branch, git_user_name, git_get_remote
+from get_stdout import branch, git_user_name, git_get_remote, python_get_library
 import requests
 
 
@@ -57,8 +57,28 @@ def git_remote():
     return list(set(arr))
 
 
+def python_library_get():
+    arr = []
+    text = python_get_library()
+
+    if text != "":
+        library = text.split('\n')[2:]
+        for i in library:
+            if i != "":
+                arr.append(i.split(" ")[0])
+    return arr
+
+
+library = python_library_get()
+
+
+def python_library():
+    return library.copy()
+
+
 functions = {
     "git_branch": git_branch,
     "git_repos_url": git_repos_url,
+    "python_library": python_library,
     "git_remote": git_remote
 }

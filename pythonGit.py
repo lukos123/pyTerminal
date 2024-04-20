@@ -11,6 +11,7 @@ import sys
 from playsound import playsound
 import colorama
 from MyCompleter import MyCompleter, get_command_json
+import importlib
 
 import custom_functions
 from get_stdout import branch
@@ -109,6 +110,10 @@ def app():
                     custom_functions.add_new_command(command)
                 elif command[0] == 'addf':
                     custom_functions.add_new_command_f(command)
+                elif command[0] == 'exit':
+                    quit()
+                elif command[0] == 'reload':
+                    MyCompleter.reload()
 
                 elif command[0] == 'pyinstaller':
 

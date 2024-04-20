@@ -9,6 +9,7 @@ import stat
 import subprocess
 import psutil
 import keyboard
+from data import PATH
 
 
 def on_rm_error(func, path, exc_info):
@@ -84,10 +85,10 @@ def add_new_command(command):
     anc.add(command[1:len(command)])
     print("added")
 
+
 def add_new_command_f(command):
     anc.addf(command[1:len(command)])
     print("added")
-
 
 
 def html(command, now_directory, path_to_git):
@@ -260,5 +261,7 @@ def py_installer(now_directory,  command, path_to_pyinstaller):
 
 
 def new(now_directory):
-    subprocess.Popen(
-        f'start cmd.exe /c start /B C:\\Users\\Kobyshev\\AppData\\Local\\Programs\\Python\\Python310\\python.exe C:/explorer/pythonGit.py {now_directory}', shell=True)
+    # subprocess.run(["python", f"{PATH}/pythonGit.py", ".\\"])
+    os.system(f"start python {PATH}/pythonGit.py .\\")
+    # subprocess.Popen(
+    #     f'start cmd.exe /c start /B C:\\Users\\Kobyshev\\AppData\\Local\\Programs\\Python\\Python310\\python.exe C:/explorer/pythonGit.py {now_directory}', shell=True)

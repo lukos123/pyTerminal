@@ -1,0 +1,6 @@
+command = "command"
+help = "help"
+compile_function = "compile_function"
+addon_with_compile_function = "addon_with_compile_function"
+next_always = "next_always"
+next = "next"

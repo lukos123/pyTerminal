@@ -1,7 +1,51 @@
-{
-  "move": "N",
-  "copy": "N",
-  "cls": "N",
-  "xcopy": { "/E": "N" },
-  "del": "N"
-}
+[
+  {
+    "command": "move",
+    "help": "",
+    "compile_function": "",
+    "addon_with_compile_function": [],
+    "next_always": false,
+    "next": []
+  },
+  {
+    "command": "copy",
+    "help": "",
+    "compile_function": "",
+    "addon_with_compile_function": [],
+    "next_always": false,
+    "next": []
+  },
+  {
+    "command": "cls",
+    "help": "",
+    "compile_function": "",
+    "addon_with_compile_function": [],
+    "next_always": false,
+    "next": []
+  },
+  {
+    "command": "xcopy",
+    "help": "",
+    "compile_function": "",
+    "addon_with_compile_function": [],
+    "next_always": false,
+    "next": [
+      {
+        "command": "/E",
+        "help": "",
+        "compile_function": "",
+        "addon_with_compile_function": [],
+        "next_always": false,
+        "next": []
+      }
+    ]
+  },
+  {
+    "command": "del",
+    "help": "",
+    "compile_function": "",
+    "addon_with_compile_function": [],
+    "next_always": false,
+    "next": []
+  }
+]

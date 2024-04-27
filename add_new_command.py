@@ -8,6 +8,7 @@ def add(words: list[str], is_f=False):
     def rec(id: int, words: list[str], data):
 
         # id = words.index(words[step])
+
         if words[id] in data:
             if id < len(words)-1:
                 if isinstance(data[words[id]], dict):
@@ -54,6 +55,8 @@ def add(words: list[str], is_f=False):
 
 def addf(words: list[str]):
     add(words, is_f=True)
+
+# type a = dict
 
 
 # import add_new_command as a

@@ -1,0 +1,104 @@
+[
+  {
+    "command": "wails",
+    "help": "wails command",
+    "compile_function": "",
+    "addon_with_compile_function": [],
+    "next_always": false,
+    "next": [
+      {
+        "command": "build",
+        "help": "build command",
+        "compile_function": "",
+        "addon_with_compile_function": [],
+        "next_always": false,
+        "next": []
+      },
+      {
+        "command": "dev",
+        "help": "dev command",
+        "compile_function": "",
+        "addon_with_compile_function": [],
+        "next_always": false,
+        "next": []
+      },
+      {
+        "command": "init",
+        "help": "init command",
+        "compile_function": "",
+        "addon_with_compile_function": [],
+        "next_always": false,
+        "next": [
+          {
+            "command": "init2",
+            "help": "init command",
+            "compile_function": "git_branch",
+            "addon_with_compile_function": [
+              {
+                "command": "in",
+                "help": "init command",
+                "compile_function": "git_branch",
+                "addon_with_compile_function": [],
+                "next_always": false,
+                "next": []
+              }
+            ],
+            "next_always": false,
+            "next": [
+              {
+                "command": "init3",
+                "help": "init command",
+                "compile_function": "",
+                "addon_with_compile_function": [],
+                "next_always": false,
+                "next": [
+                  {
+                    "command": "in",
+                    "help": "init command",
+                    "compile_function": "git_branch",
+                    "addon_with_compile_function": [],
+                    "next_always": false,
+                    "next": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "command": "wails2",
+    "help": "wails command",
+    "compile_function": "",
+    "addon_with_compile_function": [],
+    "next_always": false,
+    "next": [
+      {
+        "command": "build",
+        "help": "build command",
+        "compile_function": "",
+        "addon_with_compile_function": [],
+        "next_always": false,
+        "next": []
+      },
+      {
+        "command": "dev",
+        "help": "dev command",
+        "compile_function": "",
+        "addon_with_compile_function": [],
+        "next_always": false,
+        "next": []
+      },
+      {
+        "command": "init",
+        "help": "init command",
+        "compile_function": "",
+        "addon_with_compile_function": [],
+        "next_always": false,
+        "next": []
+      }
+    ]
+  }
+]

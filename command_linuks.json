@@ -1,6 +1,34 @@
-{
-  "mv": "N",
-  "cp": "N",
-  "rm": "N",
-  "clear": "N"
-}
+[
+  {
+    "command": "mv",
+    "help": "",
+    "compile_function": "",
+    "addon_with_compile_function": [],
+    "next_always": false,
+    "next": []
+  },
+  {
+    "command": "cp",
+    "help": "",
+    "compile_function": "",
+    "addon_with_compile_function": [],
+    "next_always": false,
+    "next": []
+  },
+  {
+    "command": "rm",
+    "help": "",
+    "compile_function": "",
+    "addon_with_compile_function": [],
+    "next_always": false,
+    "next": []
+  },
+  {
+    "command": "clear",
+    "help": "",
+    "compile_function": "",
+    "addon_with_compile_function": [],
+    "next_always": false,
+    "next": []
+  }
+]

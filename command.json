@@ -1,113 +1,85 @@
 [
   {
-    "command": "create",
-    "help": "",
-    "compile_function": "",
-    "addon_with_compile_function": [],
-    "next_always": false,
-    "next": [
+    "c": "create",
+    "h": "",
+    "cf": "",
+    "awcf": [],
+    "na": false,
+    "n": [
       {
-        "command": "file",
-        "help": "",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": [
-          {
-            "command": "name",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          }
+        "c": "file",
+        "h": "",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": [
+          { "c": "name", "h": "", "cf": "", "awcf": [], "na": false, "n": [] }
         ]
       },
       {
-        "command": "folder",
-        "help": "",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": [
-          {
-            "command": "name",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          }
+        "c": "folder",
+        "h": "",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": [
+          { "c": "name", "h": "", "cf": "", "awcf": [], "na": false, "n": [] }
         ]
       }
     ]
   },
   {
-    "command": "wails",
-    "help": "",
-    "compile_function": "",
-    "addon_with_compile_function": [],
-    "next_always": false,
-    "next": [
+    "c": "wails",
+    "h": "",
+    "cf": "",
+    "awcf": [],
+    "na": false,
+    "n": [
+      { "c": "build", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+      { "c": "dev", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
       {
-        "command": "build",
-        "help": "",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
-      },
-      {
-        "command": "dev",
-        "help": "",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
-      },
-      {
-        "command": "init",
-        "help": "",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": [
+        "c": "init",
+        "h": "",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": [
           {
-            "command": "-n",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": [
+            "c": "-n",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": [
               {
-                "command": "nameProject",
-                "help": "",
-                "compile_function": "",
-                "addon_with_compile_function": [],
-                "next_always": false,
-                "next": [
+                "c": "nameProject",
+                "h": "",
+                "cf": "",
+                "awcf": [],
+                "na": false,
+                "n": [
                   {
-                    "command": "-t",
-                    "help": "",
-                    "compile_function": "",
-                    "addon_with_compile_function": [],
-                    "next_always": false,
-                    "next": [
+                    "c": "-t",
+                    "h": "",
+                    "cf": "",
+                    "awcf": [],
+                    "na": false,
+                    "n": [
                       {
-                        "command": "react",
-                        "help": "",
-                        "compile_function": "",
-                        "addon_with_compile_function": [],
-                        "next_always": false,
-                        "next": []
+                        "c": "react",
+                        "h": "",
+                        "cf": "",
+                        "awcf": [],
+                        "na": false,
+                        "n": []
                       },
                       {
-                        "command": "https://github.com/LGiki/wails-template-nextjs",
-                        "help": "",
-                        "compile_function": "",
-                        "addon_with_compile_function": [],
-                        "next_always": false,
-                        "next": []
+                        "c": "https://github.com/LGiki/wails-template-nextjs",
+                        "h": "",
+                        "cf": "",
+                        "awcf": [],
+                        "na": false,
+                        "n": []
                       }
                     ]
                   }
@@ -119,2038 +91,1768 @@
       }
     ]
   },
+  { "c": "exit", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
   {
-    "command": "exit",
-    "help": "",
-    "compile_function": "",
-    "addon_with_compile_function": [],
-    "next_always": false,
-    "next": []
-  },
-  {
-    "command": "go",
-    "help": "",
-    "compile_function": "",
-    "addon_with_compile_function": [],
-    "next_always": false,
-    "next": [
+    "c": "go",
+    "h": "",
+    "cf": "",
+    "awcf": [],
+    "na": false,
+    "n": [
       {
-        "command": "mod",
-        "help": "",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": [
+        "c": "mod",
+        "h": "",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": [
           {
-            "command": "init",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": [
+            "c": "init",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": [
               {
-                "command": "example",
-                "help": "",
-                "compile_function": "",
-                "addon_with_compile_function": [],
-                "next_always": false,
-                "next": []
+                "c": "example",
+                "h": "",
+                "cf": "",
+                "awcf": [],
+                "na": false,
+                "n": []
               }
             ]
           }
         ]
       },
-      {
-        "command": "run",
-        "help": "",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
-      },
-      {
-        "command": "build",
-        "help": "",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
-      },
-      {
-        "command": "get",
-        "help": "",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
-      }
+      { "c": "run", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+      { "c": "build", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+      { "c": "get", "h": "", "cf": "", "awcf": [], "na": false, "n": [] }
     ]
   },
   {
-    "command": "ls",
-    "help": "",
-    "compile_function": "",
-    "addon_with_compile_function": [],
-    "next_always": false,
-    "next": [
+    "c": "ls",
+    "h": "",
+    "cf": "",
+    "awcf": [],
+    "na": false,
+    "n": [{ "c": "a", "h": "", "cf": "", "awcf": [], "na": false, "n": [] }]
+  },
+  { "c": "python", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+  { "c": "pyinstaller", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+  { "c": "cd", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+  {
+    "c": "npx",
+    "h": "",
+    "cf": "",
+    "awcf": [],
+    "na": false,
+    "n": [
       {
-        "command": "a",
-        "help": "",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
-      }
-    ]
-  },
-  {
-    "command": "python",
-    "help": "",
-    "compile_function": "",
-    "addon_with_compile_function": [],
-    "next_always": false,
-    "next": []
-  },
-  {
-    "command": "pyinstaller",
-    "help": "",
-    "compile_function": "",
-    "addon_with_compile_function": [],
-    "next_always": false,
-    "next": []
-  },
-  {
-    "command": "cd",
-    "help": "",
-    "compile_function": "",
-    "addon_with_compile_function": [],
-    "next_always": false,
-    "next": []
-  },
-  {
-    "command": "npx",
-    "help": "",
-    "compile_function": "",
-    "addon_with_compile_function": [],
-    "next_always": false,
-    "next": [
-      {
-        "command": "create-react-app",
-        "help": "",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": [
-          {
-            "command": "my-app",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          }
+        "c": "create-react-app",
+        "h": "",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": [
+          { "c": "my-app", "h": "", "cf": "", "awcf": [], "na": false, "n": [] }
         ]
       },
       {
-        "command": "create-next-app",
-        "help": "",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": [
-          {
-            "command": "my-app",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          }
+        "c": "create-next-app",
+        "h": "",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": [
+          { "c": "my-app", "h": "", "cf": "", "awcf": [], "na": false, "n": [] }
         ]
       }
     ]
   },
   {
-    "command": "pip",
-    "help": "",
-    "compile_function": "",
-    "addon_with_compile_function": [],
-    "next_always": false,
-    "next": [
+    "c": "pip",
+    "h": "",
+    "cf": "",
+    "awcf": [],
+    "na": false,
+    "n": [
       {
-        "command": "install",
-        "help": "Install packages.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": [
-          {
-            "command": "aiogram",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "aiohttp",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "aiosignal",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "annotated-types",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "appdirs",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "async-timeout",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "attrs",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "babel",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "beautifulsoup4",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "blis",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "bs4",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "catalogue",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "certifi",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "charset-normalizer",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "click",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "cloudpathlib",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "colorama",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "confection",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "cymem",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "dawg-python",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "docopt-ng",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "easygui",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "en-core-web-sm",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "frozendict",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "frozenlist",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "html5lib",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "idna",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "jinja2",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "joblib",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "keyboard",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "langcodes",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "lxml",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "magic-filter",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "markupsafe",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "multidict",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "multitasking",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "murmurhash",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "mysql-connector-python",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "numpy",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "openai",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "packaging",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "pandas",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "peewee",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "pillow",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "pip",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "playsound",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "preshed",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "prompt-toolkit",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "protobuf",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "psutil",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "pyaes",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "pydantic-core",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "pydantic",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "pygments",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "pymorphy3-dicts-ru",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "pymorphy3-dicts-uk",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "pymorphy3",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "pyperclip",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "pyrogram",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "pysocks",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "python-dateutil",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "python-dotenv",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "pytz",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "requests",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "scikit-learn",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "scipy",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "setuptools",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "six",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "smart-open",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "soupsieve",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "spacy-legacy",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "spacy-loggers",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "spacy",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "srsly",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "tgcrypto",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "thinc",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "threadpoolctl",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "tqdm",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "typer",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "typing-extensions",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "tzdata",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "uk-core-news-sm",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "urllib3",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "wasabi",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "wcwidth",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "weasel",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "webencodings",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "wheel",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "yarl",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "yfinance",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "-r",
-            "help": "Install from the given requirements file. This option can be used multiple times.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "-c",
-            "help": "Constrain versions using the given constraints file. This option can be used multiple times.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--no-deps",
-            "help": "Don't install package dependencies.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--pre",
-            "help": "Include pre-release and development versions. By default, pip only finds stable versions.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "-e",
-            "help": "Install a project in editable mode (i.e. setuptools 'develop mode') from a local project path or a VCS url.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--dry-run",
-            "help": "Don't actually install anything, just print what would be. Can be used in combination with --ignore-installed to 'resolve' the requirements.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "-t",
-            "help": "Install packages into <dir>. By default this will not replace existing files/folders in <dir>. Use --upgrade to replace existing packages in <dir> with new versions.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--platform",
-            "help": "Only use wheels compatible with <platform>. Defaults to the platform of the running system. Use this option multiple times to specify multiple platforms supported by the target interpreter.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--python-version",
-            "help": "The Python interpreter version to use for wheel and 'Requires-Python' compatibility checks. Defaults to a version derived from the running interpreter. The version can be specified using up to three dot-separated integers (e.g. '3' for 3.0.0, '3.7' for 3.7.0, or '3.7.3'). A major-minor version can also be given as a string without dots (e.g. '37' for 3.7.0).",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--implementation",
-            "help": "Only use wheels compatible with Python implementation <implementation>, e.g. 'pp', 'jy', 'cp', or 'ip'. If not specified, then the current interpreter implementation is used. Use 'py' to force implementation-agnostic wheels.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--abi",
-            "help": "Only use wheels compatible with Python abi <abi>, e.g. 'pypy_41'. If not specified, then the current interpreter abi tag is used. Use this option multiple times to specify multiple abis supported by the target interpreter. Generally you will need to specify --implementation, --platform, and --python-version when using this option.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--user",
-            "help": "Install to the Python user install directory for your platform. Typically ~/.local/, or %APPDATA%Python on Windows. (See the Python documentation for site.USER_BASE for full details.)",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--root",
-            "help": "Install everything relative to this alternate root directory.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--prefix",
-            "help": "Installation prefix where lib, bin and other top-level folders are placed. Note that the resulting installation may contain scripts and other resources which reference the Python interpreter of pip, and not that of '--prefix'. See also the '--python' option if the intention is to install packages into another (possibly pip-free) environment.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--src",
-            "help": "Directory to check out editable projects into. The default in a virtualenv is '<venv path>/src'. The default for global installs is '<current dir>/src'.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "-U",
-            "help": "Upgrade all specified packages to the newest available version. The handling of dependencies depends on the upgrade-strategy used.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--upgrade-strategy",
-            "help": "Determines how dependency upgrading should be handled default: only-if-needed. 'eager' - dependencies are upgraded regardless of whether the currently installed version satisfies the requirements of the upgraded package(s). 'only-if-needed' - are upgraded only when they do not satisfy the requirements of the upgraded package(s).",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--force-reinstall",
-            "help": "Reinstall all packages even if they are already up-to-date.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "-I",
-            "help": "Ignore the installed packages, overwriting them. This can break your system if the existing package is of a different version or was installed with a different package manager!",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--ignore-requires-python",
-            "help": "Ignore the Requires-Python information.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--no-build-isolation",
-            "help": "Disable isolation when building a modern source distribution. Build dependencies specified by PEP 518 must be already installed if this option is used.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--use-pep517",
-            "help": "Use PEP 517 for building source distributions (use --no-use-pep517 to force legacy behaviour).",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--check-build-dependencies",
-            "help": "Check the build dependencies when PEP517 is used.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--break-system-packages",
-            "help": "Allow pip to modify an EXTERNALLY-MANAGED Python installation",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "-C",
-            "help": "Configuration settings to be passed to the PEP 517 build backend. Settings take the form KEY=VALUE. Use multiple --config-settings options to pass multiple keys to the backend.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--global-option",
-            "help": "Extra global options to be supplied to the setup.py call before the install or bdist_wheel command.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--compile",
-            "help": "Compile Python source files to bytecode",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--no-compile",
-            "help": "Do not compile Python source files to bytecode",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--no-warn-script-location",
-            "help": "Do not warn when installing scripts outside PATH",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--no-warn-conflicts",
-            "help": "Do not warn about broken dependencies",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--no-binary",
-            "help": "Do not use binary packages. Can be supplied multiple times, and each time adds to the existing value. Accepts either ':all:' to disable all binary packages, ':none:' to empty the set (notice the colons), or one or more package names with commas between them (no colons). Note that some packages are tricky to compile and may fail to install when this option is used on them.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--only-binary",
-            "help": "Do not use source packages. Can be supplied multiple times, and each time adds to the existing value. Accepts either ':all:' to disable all source packages, ':none:' to empty the set, or one or more package names with commas between them. Packages without binary distributions will fail to install when this option is used on them.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--prefer-binary",
-            "help": "Prefer binary packages over source packages, even if the source packages are newer.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--require-hashes",
-            "help": "Require a hash to check each requirement against, for repeatable installs. This option is implied when any package in a requirements file has a --hash option.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--progress-bar",
-            "help": "Specify whether the progress bar should be used on, off (default: on)",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--root-user-action",
-            "help": "Action if pip is run as a root user. By default, a warning message is shown.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--report",
-            "help": "Generate a JSON file describing what pip did to install the provided requirements. Can be used in combination with --dry-run and --ignore-installed to 'resolve' the requirements. When - is used as file name it writes to stdout. When writing to stdout, please combine with the --quiet option to avoid mixing pip logging output with JSON output.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--no-clean",
-            "help": "Don't clean up build directories.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "-i",
-            "help": "Base URL of the Python Package Index (default https://pypi.org/simple). This should point to a repository compliant with PEP 503 (the simple repository API) or a local directory laid out in the same format",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--index-url",
-            "help": "Base URL of the Python Package Index (default https://pypi.org/simple). This should point to a repository compliant with PEP 503 (the simple repository API) or a local directory laid out in the same format",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--extra-index-url",
-            "help": "Extra URLs of package indexes to use in addition to --index-url. Should follow the same rules as --index-url",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--no-index",
-            "help": "Ignore package index (only looking at --find-links URLs instead)",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "-f",
-            "help": "If a URL or path to an html file, then parse for links to archives such as sdist (.tar.gz) or wheel (.whl) files. If a local path or file:// URL that's a directory, then look for archives in the directory listing. Links to VCS project URLs are not supported",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "--find-links",
-            "help": "If a URL or path to an html file, then parse for links to archives such as sdist (.tar.gz) or wheel (.whl) files. If a local path or file:// URL that's a directory, then look for archives in the directory listing. Links to VCS project URLs are not supported",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+        "c": "install",
+        "h": "Install packages.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": [
+          {
+            "c": "aiogram",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "aiohttp",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "aiosignal",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "annotated-types",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "appdirs",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "async-timeout",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          { "c": "attrs", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          { "c": "babel", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          {
+            "c": "beautifulsoup4",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          { "c": "blis", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          { "c": "bs4", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          {
+            "c": "catalogue",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "certifi",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "charset-normalizer",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          { "c": "click", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          {
+            "c": "cloudpathlib",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "colorama",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "confection",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          { "c": "cymem", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          {
+            "c": "dawg-python",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "docopt-ng",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "easygui",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "en-core-web-sm",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "frozendict",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "frozenlist",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "html5lib",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          { "c": "idna", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          {
+            "c": "jinja2",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "joblib",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "keyboard",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "langcodes",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          { "c": "lxml", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          {
+            "c": "magic-filter",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "markupsafe",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "multidict",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "multitasking",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "murmurhash",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "mysql-connector-python",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          { "c": "numpy", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          {
+            "c": "openai",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "packaging",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "pandas",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "peewee",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "pillow",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          { "c": "pip", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          {
+            "c": "playsound",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "preshed",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "prompt-toolkit",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "protobuf",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "psutil",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          { "c": "pyaes", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          {
+            "c": "pydantic-core",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "pydantic",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "pygments",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "pymorphy3-dicts-ru",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "pymorphy3-dicts-uk",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "pymorphy3",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "pyperclip",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "pyrogram",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "pysocks",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "python-dateutil",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "python-dotenv",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          { "c": "pytz", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          {
+            "c": "requests",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "scikit-learn",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          { "c": "scipy", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          {
+            "c": "setuptools",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          { "c": "six", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          {
+            "c": "smart-open",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "soupsieve",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "spacy-legacy",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "spacy-loggers",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          { "c": "spacy", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          { "c": "srsly", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          {
+            "c": "tgcrypto",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          { "c": "thinc", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          {
+            "c": "threadpoolctl",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          { "c": "tqdm", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          { "c": "typer", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          {
+            "c": "typing-extensions",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "tzdata",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "uk-core-news-sm",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "urllib3",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "wasabi",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "wcwidth",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "weasel",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "webencodings",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          { "c": "wheel", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          { "c": "yarl", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          {
+            "c": "yfinance",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "-r",
+            "h": "Install from the given requirements file. This option can be used multiple times.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "-c",
+            "h": "Constrain versions using the given constraints file. This option can be used multiple times.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--no-deps",
+            "h": "Don't install package dependencies.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--pre",
+            "h": "Include pre-release and development versions. By default, pip only finds stable versions.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "-e",
+            "h": "Install a project in editable mode (i.e. setuptools 'develop mode') from a local project path or a VCS url.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--dry-run",
+            "h": "Don't actually install anything, just print what would be. Can be used in combination with --ignore-installed to 'resolve' the requirements.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "-t",
+            "h": "Install packages into <dir>. By default this will not replace existing files/folders in <dir>. Use --upgrade to replace existing packages in <dir> with new versions.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--platform",
+            "h": "Only use wheels compatible with <platform>. Defaults to the platform of the running system. Use this option multiple times to specify multiple platforms supported by the target interpreter.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--python-version",
+            "h": "The Python interpreter version to use for wheel and 'Requires-Python' compatibility checks. Defaults to a version derived from the running interpreter. The version can be specified using up to three dot-separated integers (e.g. '3' for 3.0.0, '3.7' for 3.7.0, or '3.7.3'). A major-minor version can also be given as a string without dots (e.g. '37' for 3.7.0).",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--implementation",
+            "h": "Only use wheels compatible with Python implementation <implementation>, e.g. 'pp', 'jy', 'cp', or 'ip'. If not specified, then the current interpreter implementation is used. Use 'py' to force implementation-agnostic wheels.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--abi",
+            "h": "Only use wheels compatible with Python abi <abi>, e.g. 'pypy_41'. If not specified, then the current interpreter abi tag is used. Use this option multiple times to specify multiple abis supported by the target interpreter. Generally you will need to specify --implementation, --platform, and --python-version when using this option.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--user",
+            "h": "Install to the Python user install directory for your platform. Typically ~/.local/, or %APPDATA%Python on Windows. (See the Python documentation for site.USER_BASE for full details.)",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--root",
+            "h": "Install everything relative to this alternate root directory.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--prefix",
+            "h": "Installation prefix where lib, bin and other top-level folders are placed. Note that the resulting installation may contain scripts and other resources which reference the Python interpreter of pip, and not that of '--prefix'. See also the '--python' option if the intention is to install packages into another (possibly pip-free) environment.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--src",
+            "h": "Directory to check out editable projects into. The default in a virtualenv is '<venv path>/src'. The default for global installs is '<current dir>/src'.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "-U",
+            "h": "Upgrade all specified packages to the newest available version. The handling of dependencies depends on the upgrade-strategy used.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--upgrade-strategy",
+            "h": "Determines how dependency upgrading should be handled default: only-if-needed. 'eager' - dependencies are upgraded regardless of whether the currently installed version satisfies the requirements of the upgraded package(s). 'only-if-needed' - are upgraded only when they do not satisfy the requirements of the upgraded package(s).",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--force-reinstall",
+            "h": "Reinstall all packages even if they are already up-to-date.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "-I",
+            "h": "Ignore the installed packages, overwriting them. This can break your system if the existing package is of a different version or was installed with a different package manager!",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--ignore-requires-python",
+            "h": "Ignore the Requires-Python information.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--no-build-isolation",
+            "h": "Disable isolation when building a modern source distribution. Build dependencies specified by PEP 518 must be already installed if this option is used.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--use-pep517",
+            "h": "Use PEP 517 for building source distributions (use --no-use-pep517 to force legacy behaviour).",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--check-build-dependencies",
+            "h": "Check the build dependencies when PEP517 is used.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--break-system-packages",
+            "h": "Allow pip to modify an EXTERNALLY-MANAGED Python installation",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "-C",
+            "h": "Configuration settings to be passed to the PEP 517 build backend. Settings take the form KEY=VALUE. Use multiple --config-settings options to pass multiple keys to the backend.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--global-option",
+            "h": "Extra global options to be supplied to the setup.py call before the install or bdist_wheel command.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--compile",
+            "h": "Compile Python source files to bytecode",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--no-compile",
+            "h": "Do not compile Python source files to bytecode",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--no-warn-script-location",
+            "h": "Do not warn when installing scripts outside PATH",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--no-warn-conflicts",
+            "h": "Do not warn about broken dependencies",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--no-binary",
+            "h": "Do not use binary packages. Can be supplied multiple times, and each time adds to the existing value. Accepts either ':all:' to disable all binary packages, ':none:' to empty the set (notice the colons), or one or more package names with commas between them (no colons). Note that some packages are tricky to compile and may fail to install when this option is used on them.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--only-binary",
+            "h": "Do not use source packages. Can be supplied multiple times, and each time adds to the existing value. Accepts either ':all:' to disable all source packages, ':none:' to empty the set, or one or more package names with commas between them. Packages without binary distributions will fail to install when this option is used on them.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--prefer-binary",
+            "h": "Prefer binary packages over source packages, even if the source packages are newer.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--require-hashes",
+            "h": "Require a hash to check each requirement against, for repeatable installs. This option is implied when any package in a requirements file has a --hash option.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--progress-bar",
+            "h": "Specify whether the progress bar should be used on, off (default: on)",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--root-user-action",
+            "h": "Action if pip is run as a root user. By default, a warning message is shown.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--report",
+            "h": "Generate a JSON file describing what pip did to install the provided requirements. Can be used in combination with --dry-run and --ignore-installed to 'resolve' the requirements. When - is used as file name it writes to stdout. When writing to stdout, please combine with the --quiet option to avoid mixing pip logging output with JSON output.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--no-clean",
+            "h": "Don't clean up build directories.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "-i",
+            "h": "Base URL of the Python Package Index (default https://pypi.org/simple). This should point to a repository compliant with PEP 503 (the simple repository API) or a local directory laid out in the same format",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--index-url",
+            "h": "Base URL of the Python Package Index (default https://pypi.org/simple). This should point to a repository compliant with PEP 503 (the simple repository API) or a local directory laid out in the same format",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--extra-index-url",
+            "h": "Extra URLs of package indexes to use in addition to --index-url. Should follow the same rules as --index-url",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--no-index",
+            "h": "Ignore package index (only looking at --find-links URLs instead)",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "-f",
+            "h": "If a URL or path to an html file, then parse for links to archives such as sdist (.tar.gz) or wheel (.whl) files. If a local path or file:// URL that's a directory, then look for archives in the directory listing. Links to VCS project URLs are not supported",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--find-links",
+            "h": "If a URL or path to an html file, then parse for links to archives such as sdist (.tar.gz) or wheel (.whl) files. If a local path or file:// URL that's a directory, then look for archives in the directory listing. Links to VCS project URLs are not supported",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           }
         ]
       },
       {
-        "command": "download",
-        "help": "Download packages.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": [
+        "c": "download",
+        "h": "Download packages.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": [
           {
-            "command": "-c",
-            "help": "Constrain versions using the given constraints file. This option can be used multiple times.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "-c",
+            "h": "Constrain versions using the given constraints file. This option can be used multiple times.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "-r",
-            "help": "Install from the given requirements file. This option can be used multiple times.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "-r",
+            "h": "Install from the given requirements file. This option can be used multiple times.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--no-deps",
-            "help": "Don't install package dependencies.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--no-deps",
+            "h": "Don't install package dependencies.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--global-option",
-            "help": "Extra global options to be supplied to the setup.py call before the install or bdist_wheel command.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--global-option",
+            "h": "Extra global options to be supplied to the setup.py call before the install or bdist_wheel command.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--no-binary",
-            "help": "Do not use binary packages. Can be supplied multiple times, and each time adds to the existing value. Accepts either \":all:\" to disable all binary packages, \":none:\" to empty the set (notice the colons), or one or more package names with commas between them (no colons). Note that some packages are tricky to compile and may fail to install when this option is used on them.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--no-binary",
+            "h": "Do not use binary packages. Can be supplied multiple times, and each time adds to the existing value. Accepts either \":all:\" to disable all binary packages, \":none:\" to empty the set (notice the colons), or one or more package names with commas between them (no colons). Note that some packages are tricky to compile and may fail to install when this option is used on them.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--only-binary",
-            "help": "Do not use source packages. Can be supplied multiple times, and each time adds to the existing value. Accepts either \":all:\" to disable all source packages, \":none:\" to empty the set, or one or more package names with commas between them. Packages without binary distributions will fail to install when this option is used on them.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--only-binary",
+            "h": "Do not use source packages. Can be supplied multiple times, and each time adds to the existing value. Accepts either \":all:\" to disable all source packages, \":none:\" to empty the set, or one or more package names with commas between them. Packages without binary distributions will fail to install when this option is used on them.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--prefer-binary",
-            "help": "Prefer binary packages over source packages, even if the source packages are newer.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--prefer-binary",
+            "h": "Prefer binary packages over source packages, even if the source packages are newer.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--src",
-            "help": "Directory to check out editable projects into. The default in a virtualenv is \"<venv path>/src\". The default for global installs is \"<current dir>/src\".",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--src",
+            "h": "Directory to check out editable projects into. The default in a virtualenv is \"<venv path>/src\". The default for global installs is \"<current dir>/src\".",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--pre",
-            "help": "Include pre-release and development versions. By default, pip only finds stable versions.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--pre",
+            "h": "Include pre-release and development versions. By default, pip only finds stable versions.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--require-hashes",
-            "help": "Require a hash to check each requirement against, for repeatable installs. This option is implied when any package in a requirements file has a --hash option.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--require-hashes",
+            "h": "Require a hash to check each requirement against, for repeatable installs. This option is implied when any package in a requirements file has a --hash option.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--progress-bar",
-            "help": "Specify whether the progress bar should be used on, off (default: on)",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--progress-bar",
+            "h": "Specify whether the progress bar should be used on, off (default: on)",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--no-build-isolation",
-            "help": "Disable isolation when building a modern source distribution. Build dependencies specified by PEP 518 must be already installed if this option is used.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--no-build-isolation",
+            "h": "Disable isolation when building a modern source distribution. Build dependencies specified by PEP 518 must be already installed if this option is used.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--use-pep517",
-            "help": "Use PEP 517 for building source distributions (use --no-use-pep517 to force legacy behaviour).",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--use-pep517",
+            "h": "Use PEP 517 for building source distributions (use --no-use-pep517 to force legacy behaviour).",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--check-build-dependencies",
-            "help": "Check the build dependencies when PEP517 is used.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--check-build-dependencies",
+            "h": "Check the build dependencies when PEP517 is used.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--ignore-requires-python",
-            "help": "Ignore the Requires-Python information.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--ignore-requires-python",
+            "h": "Ignore the Requires-Python information.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "-d",
-            "help": "Download packages into <dir>.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "-d",
+            "h": "Download packages into <dir>.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--platform",
-            "help": "Only use wheels compatible with <platform>. Defaults to the platform of the running system. Use this option multiple times to specify multiple platforms supported by the target interpreter.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--platform",
+            "h": "Only use wheels compatible with <platform>. Defaults to the platform of the running system. Use this option multiple times to specify multiple platforms supported by the target interpreter.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--python-version",
-            "help": "The Python interpreter version to use for wheel and \"Requires-Python\" compatibility checks. Defaults to a version derived from the running interpreter. The version can be specified using up to three dot-separated integers (e.g. \"3\" for 3.0.0, \"3.7\" for 3.7.0, or \"3.7.3\"). A major-minor version can also be given as a string without dots (e.g. \"37\" for 3.7.0).",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--python-version",
+            "h": "The Python interpreter version to use for wheel and \"Requires-Python\" compatibility checks. Defaults to a version derived from the running interpreter. The version can be specified using up to three dot-separated integers (e.g. \"3\" for 3.0.0, \"3.7\" for 3.7.0, or \"3.7.3\"). A major-minor version can also be given as a string without dots (e.g. \"37\" for 3.7.0).",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--implementation",
-            "help": "Only use wheels compatible with Python implementation <implementation>, e.g. 'pp', 'jy', 'cp', or 'ip'. If not specified, then the current interpreter implementation is used. Use 'py' to force implementation-agnostic wheels.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--implementation",
+            "h": "Only use wheels compatible with Python implementation <implementation>, e.g. 'pp', 'jy', 'cp', or 'ip'. If not specified, then the current interpreter implementation is used. Use 'py' to force implementation-agnostic wheels.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--abi",
-            "help": "Only use wheels compatible with Python abi <abi>, e.g. 'pypy_41'. If not specified, then the current interpreter abi tag is used. Use this option multiple times to specify multiple abis supported by the target interpreter. Generally you will need to specify --implementation, --platform, and --python-version when using this option.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--abi",
+            "h": "Only use wheels compatible with Python abi <abi>, e.g. 'pypy_41'. If not specified, then the current interpreter abi tag is used. Use this option multiple times to specify multiple abis supported by the target interpreter. Generally you will need to specify --implementation, --platform, and --python-version when using this option.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--no-clean",
-            "help": "Don't clean up build directories.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--no-clean",
+            "h": "Don't clean up build directories.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "-i",
-            "help": "Base URL of the Python Package Index (default https://pypi.org/simple). This should point to a repository compliant with PEP 503 (the simple repository API) or a local directory laid out in the same format.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "-i",
+            "h": "Base URL of the Python Package Index (default https://pypi.org/simple). This should point to a repository compliant with PEP 503 (the simple repository API) or a local directory laid out in the same format.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--extra-index-url",
-            "help": "Extra URLs of package indexes to use in addition to --index-url. Should follow the same rules as --index-url.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--extra-index-url",
+            "h": "Extra URLs of package indexes to use in addition to --index-url. Should follow the same rules as --index-url.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--no-index",
-            "help": "Ignore package index (only looking at --find-links URLs instead).",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--no-index",
+            "h": "Ignore package index (only looking at --find-links URLs instead).",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "-f",
-            "help": "If a URL or path to an html file, then parse for links to archives such as sdist (.tar.gz) or wheel (.whl) files. If a local path or file:// URL that's a directory, then look for archives in the directory listing. Links to VCS project URLs are not supported.",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "-f",
+            "h": "If a URL or path to an html file, then parse for links to archives such as sdist (.tar.gz) or wheel (.whl) files. If a local path or file:// URL that's a directory, then look for archives in the directory listing. Links to VCS project URLs are not supported.",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           }
         ]
       },
       {
-        "command": "uninstall",
-        "help": "Uninstall packages.",
-        "compile_function": "python_library",
-        "addon_with_compile_function": [],
-        "next_always": true,
-        "next": []
+        "c": "uninstall",
+        "h": "Uninstall packages.",
+        "cf": "python_library",
+        "awcf": [],
+        "na": true,
+        "n": []
       },
       {
-        "command": "freeze",
-        "help": "Output installed packages in requirements format.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "freeze",
+        "h": "Output installed packages in requirements format.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "inspect",
-        "help": "Inspect the python environment.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "inspect",
+        "h": "Inspect the python environment.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "list",
-        "help": "List installed packages.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "list",
+        "h": "List installed packages.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "show",
-        "help": "Show information about installed packages.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "show",
+        "h": "Show information about installed packages.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "check",
-        "help": "Verify installed packages have compatible dependencies.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "check",
+        "h": "Verify installed packages have compatible dependencies.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "config",
-        "help": "Manage local and global configuration.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "config",
+        "h": "Manage local and global configuration.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "search",
-        "help": "Search PyPI for packages.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "search",
+        "h": "Search PyPI for packages.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "cache",
-        "help": "Inspect and manage pip's wheel cache.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "cache",
+        "h": "Inspect and manage pip's wheel cache.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "index",
-        "help": "Inspect information available from package indexes.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "index",
+        "h": "Inspect information available from package indexes.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "wheel",
-        "help": "Build wheels from your requirements.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "wheel",
+        "h": "Build wheels from your requirements.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "hash",
-        "help": "Compute hashes of package archives.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "hash",
+        "h": "Compute hashes of package archives.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "completion",
-        "help": "A helper command used for command completion.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "completion",
+        "h": "A helper command used for command completion.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "debug",
-        "help": "Show information useful for debugging.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "debug",
+        "h": "Show information useful for debugging.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "help",
-        "help": "Show help for commands.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "help",
+        "h": "Show help for commands.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "-h",
-        "help": "Show help.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "-h",
+        "h": "Show help.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "--debug",
-        "help": "Let unhandled exceptions propagate outside the main subroutine, instead of logging them to stderr.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "--debug",
+        "h": "Let unhandled exceptions propagate outside the main subroutine, instead of logging them to stderr.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "--isolated",
-        "help": "Run pip in an isolated mode, ignoring environment variables and user configuration.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "--isolated",
+        "h": "Run pip in an isolated mode, ignoring environment variables and user configuration.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "--require-virtualenv",
-        "help": "Allow pip to only run in a virtual environment; exit with an error otherwise.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "--require-virtualenv",
+        "h": "Allow pip to only run in a virtual environment; exit with an error otherwise.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "--python",
-        "help": "Run pip with the specified Python interpreter.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "--python",
+        "h": "Run pip with the specified Python interpreter.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "-v",
-        "help": "Give more output. Option is additive, and can be used up to 3 times.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "-v",
+        "h": "Give more output. Option is additive, and can be used up to 3 times.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "-V",
-        "help": "Show version and exit.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "-V",
+        "h": "Show version and exit.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "-q",
-        "help": "Give less output. Option is additive, and can be used up to 3 times (corresponding to WARNING, ERROR, and CRITICAL logging levels).",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "-q",
+        "h": "Give less output. Option is additive, and can be used up to 3 times (corresponding to WARNING, ERROR, and CRITICAL logging levels).",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "--log",
-        "help": "Path to a verbose appending log.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "--log",
+        "h": "Path to a verbose appending log.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "--no-input",
-        "help": "Disable prompting for input.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "--no-input",
+        "h": "Disable prompting for input.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "--keyring-provider",
-        "help": "Enable the credential lookup via the keyring library if user input is allowed. Specify which mechanism to use disabled, import, subprocess. (default: disabled)",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "--keyring-provider",
+        "h": "Enable the credential lookup via the keyring library if user input is allowed. Specify which mechanism to use disabled, import, subprocess. (default: disabled)",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "--proxy",
-        "help": "Specify a proxy in the form scheme://user:passwd@proxy.server:port.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "--proxy",
+        "h": "Specify a proxy in the form scheme://user:passwd@proxy.server:port.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "--retries",
-        "help": "Maximum number of retries each connection should attempt (default 5 times).",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "--retries",
+        "h": "Maximum number of retries each connection should attempt (default 5 times).",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "--timeout",
-        "help": "Set the socket timeout (default 15 seconds).",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "--timeout",
+        "h": "Set the socket timeout (default 15 seconds).",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "--exists-action",
-        "help": "Default action when a path already exists: (s)witch, (i)gnore, (w)ipe, (b)ackup, (a)bort.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "--exists-action",
+        "h": "Default action when a path already exists: (s)witch, (i)gnore, (w)ipe, (b)ackup, (a)bort.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "--trusted-host",
-        "help": "Mark this host or host:port pair as trusted, even though it does not have valid or any HTTPS.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "--trusted-host",
+        "h": "Mark this host or host:port pair as trusted, even though it does not have valid or any HTTPS.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "--cert",
-        "help": "Path to PEM-encoded CA certificate bundle. If provided, overrides the default. See 'SSL Certificate Verification' in pip documentation for more information.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "--cert",
+        "h": "Path to PEM-encoded CA certificate bundle. If provided, overrides the default. See 'SSL Certificate Verification' in pip documentation for more information.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "--client-cert",
-        "help": "Path to SSL client certificate, a single file containing the private key and the certificate in PEM format.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "--client-cert",
+        "h": "Path to SSL client certificate, a single file containing the private key and the certificate in PEM format.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "--cache-dir",
-        "help": "Store the cache data in <dir>.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "--cache-dir",
+        "h": "Store the cache data in <dir>.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "--no-cache-dir",
-        "help": "Disable the cache.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "--no-cache-dir",
+        "h": "Disable the cache.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "--disable-pip-version-check",
-        "help": "Don't periodically check PyPI to determine whether a new version of pip is available for download. Implied with --no-index.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "--disable-pip-version-check",
+        "h": "Don't periodically check PyPI to determine whether a new version of pip is available for download. Implied with --no-index.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "--no-color",
-        "help": "Suppress colored output.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "--no-color",
+        "h": "Suppress colored output.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "--no-python-version-warning",
-        "help": "Silence deprecation warnings for upcoming unsupported Pythons.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "--no-python-version-warning",
+        "h": "Silence deprecation warnings for upcoming unsupported Pythons.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "--use-feature",
-        "help": "Enable new functionality, that may be backward incompatible.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "--use-feature",
+        "h": "Enable new functionality, that may be backward incompatible.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "--use-deprecated",
-        "help": "Enable deprecated functionality, that will be removed in the future.",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "--use-deprecated",
+        "h": "Enable deprecated functionality, that will be removed in the future.",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       }
     ]
   },
+  { "c": "mkdir", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
   {
-    "command": "mkdir",
-    "help": "",
-    "compile_function": "",
-    "addon_with_compile_function": [],
-    "next_always": false,
-    "next": []
+    "c": "rmdir",
+    "h": "",
+    "cf": "",
+    "awcf": [],
+    "na": false,
+    "n": [{ "c": "/s", "h": "/q", "cf": "", "awcf": [], "na": false, "n": [] }]
   },
+  { "c": "echo", "h": "'' > ", "cf": "", "awcf": [], "na": false, "n": [] },
   {
-    "command": "rmdir",
-    "help": "",
-    "compile_function": "",
-    "addon_with_compile_function": [],
-    "next_always": false,
-    "next": [
+    "c": "npm",
+    "h": "",
+    "cf": "",
+    "awcf": [],
+    "na": false,
+    "n": [
       {
-        "command": "/s",
-        "help": "/q",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
-      }
-    ]
-  },
-  {
-    "command": "echo",
-    "help": "'' > ",
-    "compile_function": "",
-    "addon_with_compile_function": [],
-    "next_always": false,
-    "next": []
-  },
-  {
-    "command": "npm",
-    "help": "",
-    "compile_function": "",
-    "addon_with_compile_function": [],
-    "next_always": false,
-    "next": [
-      {
-        "command": "run",
-        "help": "",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": [
-          {
-            "command": "start",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "build",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "dev",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          }
+        "c": "run",
+        "h": "",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": [
+          { "c": "start", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          { "c": "build", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          { "c": "dev", "h": "", "cf": "", "awcf": [], "na": false, "n": [] }
         ]
       },
       {
-        "command": "install",
-        "help": "",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": [
+        "c": "install",
+        "h": "",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": [
+          { "c": "sass", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
           {
-            "command": "sass",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "react-content-loader",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "react-content-loader",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "@material-ui/core",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "@material-ui/core",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "react-lazy-load-image-component",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "react-lazy-load-image-component",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "@material-ui/icons",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "@material-ui/icons",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "framer-motion",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "framer-motion",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "react-router-dom",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "react-router-dom",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "react-router-dom@5",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "react-router-dom@5",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          },
-          {
-            "command": "@reduxjs/toolkit",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": [
+            "c": "@reduxjs/toolkit",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": [
               {
-                "command": "react-redux",
-                "help": "",
-                "compile_function": "",
-                "addon_with_compile_function": [],
-                "next_always": false,
-                "next": [
+                "c": "react-redux",
+                "h": "",
+                "cf": "",
+                "awcf": [],
+                "na": false,
+                "n": [
                   {
-                    "command": "redux",
-                    "help": "",
-                    "compile_function": "",
-                    "addon_with_compile_function": [],
-                    "next_always": false,
-                    "next": []
+                    "c": "redux",
+                    "h": "",
+                    "cf": "",
+                    "awcf": [],
+                    "na": false,
+                    "n": []
                   }
                 ]
               }
             ]
           },
           {
-            "command": "--legacy-peer-deps",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": [
+            "c": "--legacy-peer-deps",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": [
               {
-                "command": "sass",
-                "help": "",
-                "compile_function": "",
-                "addon_with_compile_function": [],
-                "next_always": false,
-                "next": []
+                "c": "sass",
+                "h": "",
+                "cf": "",
+                "awcf": [],
+                "na": false,
+                "n": []
               },
               {
-                "command": "react-content-loader",
-                "help": "",
-                "compile_function": "",
-                "addon_with_compile_function": [],
-                "next_always": false,
-                "next": []
+                "c": "react-content-loader",
+                "h": "",
+                "cf": "",
+                "awcf": [],
+                "na": false,
+                "n": []
               },
               {
-                "command": "@material-ui/core",
-                "help": "",
-                "compile_function": "",
-                "addon_with_compile_function": [],
-                "next_always": false,
-                "next": []
+                "c": "@material-ui/core",
+                "h": "",
+                "cf": "",
+                "awcf": [],
+                "na": false,
+                "n": []
               },
               {
-                "command": "@material-ui/icons",
-                "help": "",
-                "compile_function": "",
-                "addon_with_compile_function": [],
-                "next_always": false,
-                "next": []
+                "c": "@material-ui/icons",
+                "h": "",
+                "cf": "",
+                "awcf": [],
+                "na": false,
+                "n": []
               },
               {
-                "command": "react-lazy-load-image-component",
-                "help": "",
-                "compile_function": "",
-                "addon_with_compile_function": [],
-                "next_always": false,
-                "next": []
+                "c": "react-lazy-load-image-component",
+                "h": "",
+                "cf": "",
+                "awcf": [],
+                "na": false,
+                "n": []
               },
               {
-                "command": "framer-motion",
-                "help": "",
-                "compile_function": "",
-                "addon_with_compile_function": [],
-                "next_always": false,
-                "next": []
+                "c": "framer-motion",
+                "h": "",
+                "cf": "",
+                "awcf": [],
+                "na": false,
+                "n": []
               },
               {
-                "command": "react-router-dom",
-                "help": "",
-                "compile_function": "",
-                "addon_with_compile_function": [],
-                "next_always": false,
-                "next": []
+                "c": "react-router-dom",
+                "h": "",
+                "cf": "",
+                "awcf": [],
+                "na": false,
+                "n": []
               },
               {
-                "command": "react-router-dom@5",
-                "help": "",
-                "compile_function": "",
-                "addon_with_compile_function": [],
-                "next_always": false,
-                "next": []
+                "c": "react-router-dom@5",
+                "h": "",
+                "cf": "",
+                "awcf": [],
+                "na": false,
+                "n": []
               },
               {
-                "command": "@reduxjs/toolkit",
-                "help": "",
-                "compile_function": "",
-                "addon_with_compile_function": [],
-                "next_always": false,
-                "next": [
+                "c": "@reduxjs/toolkit",
+                "h": "",
+                "cf": "",
+                "awcf": [],
+                "na": false,
+                "n": [
                   {
-                    "command": "react-redux",
-                    "help": "",
-                    "compile_function": "",
-                    "addon_with_compile_function": [],
-                    "next_always": false,
-                    "next": [
+                    "c": "react-redux",
+                    "h": "",
+                    "cf": "",
+                    "awcf": [],
+                    "na": false,
+                    "n": [
                       {
-                        "command": "redux",
-                        "help": "",
-                        "compile_function": "",
-                        "addon_with_compile_function": [],
-                        "next_always": false,
-                        "next": []
+                        "c": "redux",
+                        "h": "",
+                        "cf": "",
+                        "awcf": [],
+                        "na": false,
+                        "n": []
                       }
                     ]
                   }
@@ -2159,97 +1861,97 @@
             ]
           },
           {
-            "command": "--force",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": [
+            "c": "--force",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": [
               {
-                "command": "sass",
-                "help": "",
-                "compile_function": "",
-                "addon_with_compile_function": [],
-                "next_always": false,
-                "next": []
+                "c": "sass",
+                "h": "",
+                "cf": "",
+                "awcf": [],
+                "na": false,
+                "n": []
               },
               {
-                "command": "react-content-loader",
-                "help": "",
-                "compile_function": "",
-                "addon_with_compile_function": [],
-                "next_always": false,
-                "next": []
+                "c": "react-content-loader",
+                "h": "",
+                "cf": "",
+                "awcf": [],
+                "na": false,
+                "n": []
               },
               {
-                "command": "@material-ui/core",
-                "help": "",
-                "compile_function": "",
-                "addon_with_compile_function": [],
-                "next_always": false,
-                "next": []
+                "c": "@material-ui/core",
+                "h": "",
+                "cf": "",
+                "awcf": [],
+                "na": false,
+                "n": []
               },
               {
-                "command": "@material-ui/icons",
-                "help": "",
-                "compile_function": "",
-                "addon_with_compile_function": [],
-                "next_always": false,
-                "next": []
+                "c": "@material-ui/icons",
+                "h": "",
+                "cf": "",
+                "awcf": [],
+                "na": false,
+                "n": []
               },
               {
-                "command": "react-lazy-load-image-component",
-                "help": "",
-                "compile_function": "",
-                "addon_with_compile_function": [],
-                "next_always": false,
-                "next": []
+                "c": "react-lazy-load-image-component",
+                "h": "",
+                "cf": "",
+                "awcf": [],
+                "na": false,
+                "n": []
               },
               {
-                "command": "framer-motion",
-                "help": "",
-                "compile_function": "",
-                "addon_with_compile_function": [],
-                "next_always": false,
-                "next": []
+                "c": "framer-motion",
+                "h": "",
+                "cf": "",
+                "awcf": [],
+                "na": false,
+                "n": []
               },
               {
-                "command": "react-router-dom",
-                "help": "",
-                "compile_function": "",
-                "addon_with_compile_function": [],
-                "next_always": false,
-                "next": []
+                "c": "react-router-dom",
+                "h": "",
+                "cf": "",
+                "awcf": [],
+                "na": false,
+                "n": []
               },
               {
-                "command": "react-router-dom@5",
-                "help": "",
-                "compile_function": "",
-                "addon_with_compile_function": [],
-                "next_always": false,
-                "next": []
+                "c": "react-router-dom@5",
+                "h": "",
+                "cf": "",
+                "awcf": [],
+                "na": false,
+                "n": []
               },
               {
-                "command": "@reduxjs/toolkit",
-                "help": "",
-                "compile_function": "",
-                "addon_with_compile_function": [],
-                "next_always": false,
-                "next": [
+                "c": "@reduxjs/toolkit",
+                "h": "",
+                "cf": "",
+                "awcf": [],
+                "na": false,
+                "n": [
                   {
-                    "command": "react-redux",
-                    "help": "",
-                    "compile_function": "",
-                    "addon_with_compile_function": [],
-                    "next_always": false,
-                    "next": [
+                    "c": "react-redux",
+                    "h": "",
+                    "cf": "",
+                    "awcf": [],
+                    "na": false,
+                    "n": [
                       {
-                        "command": "redux",
-                        "help": "",
-                        "compile_function": "",
-                        "addon_with_compile_function": [],
-                        "next_always": false,
-                        "next": []
+                        "c": "redux",
+                        "h": "",
+                        "cf": "",
+                        "awcf": [],
+                        "na": false,
+                        "n": []
                       }
                     ]
                   }
@@ -2262,599 +1964,822 @@
     ]
   },
   {
-    "command": "git",
-    "help": "",
-    "compile_function": "",
-    "addon_with_compile_function": [],
-    "next_always": false,
-    "next": [
+    "c": "git",
+    "h": "",
+    "cf": "",
+    "awcf": [],
+    "na": false,
+    "n": [
       {
-        "command": "clone",
-        "help": "Clone a repository into a new directory",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "clone",
+        "h": "Clone a repository into a new directory",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "init",
-        "help": "Create an empty Git repository or reinitialize an existing one",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "init",
+        "h": "Create an empty Git repository or reinitialize an existing one",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "add",
-        "help": "Add file contents to the index",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": [
+        "c": "add",
+        "h": "Add file contents to the index",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": [{ "c": ".", "h": "", "cf": "", "awcf": [], "na": false, "n": [] }]
+      },
+      {
+        "c": "mv",
+        "h": "Move or rename a file, a directory, or a symlink",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
+      },
+      {
+        "c": "rm",
+        "h": "Remove files from the working tree and from the index",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
+      },
+      {
+        "c": "restore",
+        "h": "Restore working tree files",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
+      },
+      {
+        "c": "bisect",
+        "h": "Use binary search to find the commit that introduced a bug",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
+      },
+      {
+        "c": "diff",
+        "h": "Show changes between commits, commit and working tree, etc",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
+      },
+      {
+        "c": "grep",
+        "h": "Print lines matching a pattern",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
+      },
+      {
+        "c": "log",
+        "h": "Show commit logs",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
+      },
+      {
+        "c": "show",
+        "h": "Show various types of objects",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
+      },
+      {
+        "c": "rebase",
+        "h": "Reapply commits on top of another base tip",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
+      },
+      {
+        "c": "reset",
+        "h": "Reset current HEAD to the specified state",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
+      },
+      {
+        "c": "switch",
+        "h": "Switch branches",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
+      },
+      {
+        "c": "tag",
+        "h": "Create, list, delete or verify a tag object signed with GPG",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
+      },
+      {
+        "c": "commit",
+        "h": "Record changes to the repository",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": [
           {
-            "command": ".",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          }
-        ]
-      },
-      {
-        "command": "mv",
-        "help": "Move or rename a file, a directory, or a symlink",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
-      },
-      {
-        "command": "rm",
-        "help": "Remove files from the working tree and from the index",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
-      },
-      {
-        "command": "restore",
-        "help": "Restore working tree files",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
-      },
-      {
-        "command": "bisect",
-        "help": "Use binary search to find the commit that introduced a bug",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
-      },
-      {
-        "command": "diff",
-        "help": "Show changes between commits, commit and working tree, etc",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
-      },
-      {
-        "command": "grep",
-        "help": "Print lines matching a pattern",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
-      },
-      {
-        "command": "log",
-        "help": "Show commit logs",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
-      },
-      {
-        "command": "show",
-        "help": "Show various types of objects",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
-      },
-      {
-        "command": "rebase",
-        "help": "Reapply commits on top of another base tip",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
-      },
-      {
-        "command": "reset",
-        "help": "Reset current HEAD to the specified state",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
-      },
-      {
-        "command": "switch",
-        "help": "Switch branches",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
-      },
-      {
-        "command": "tag",
-        "help": "Create, list, delete or verify a tag object signed with GPG",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
-      },
-      {
-        "command": "commit",
-        "help": "Record changes to the repository",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": [
-          {
-            "command": "-m",
-            "help": "commit message",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": [
+            "c": "-m",
+            "h": "commit message",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": [
               {
-                "command": "\"commitMassage\"",
-                "help": "",
-                "compile_function": "",
-                "addon_with_compile_function": [],
-                "next_always": false,
-                "next": []
+                "c": "\"commitMassage\"",
+                "h": "",
+                "cf": "",
+                "awcf": [],
+                "na": false,
+                "n": []
               }
             ]
           },
           {
-            "command": "-q",
-            "help": "suppress summary after successful commit",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "-q",
+            "h": "suppress summary after successful commit",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "-v",
-            "help": "show diff in commit message template",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "-v",
+            "h": "show diff in commit message template",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "-F",
-            "help": "read message from file",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "-F",
+            "h": "read message from file",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--author",
-            "help": "override author for commit",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--author",
+            "h": "override author for commit",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--date",
-            "help": "override date for commit",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--date",
+            "h": "override date for commit",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "-c",
-            "help": "reuse and edit message from specified commit",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "-c",
+            "h": "reuse and edit message from specified commit",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "-C",
-            "help": "reuse message from specified commit",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "-C",
+            "h": "reuse message from specified commit",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--fixup",
-            "help": "use autosquash formatted message to fixup or amend/reword specified commit",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--fixup",
+            "h": "use autosquash formatted message to fixup or amend/reword specified commit",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--squash",
-            "help": "use autosquash formatted message to squash specified commit",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--squash",
+            "h": "use autosquash formatted message to squash specified commit",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--reset-author",
-            "help": "the commit is authored by me now (used with -C/-c/--amend)",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--reset-author",
+            "h": "the commit is authored by me now (used with -C/-c/--amend)",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--trailer",
-            "help": "add custom trailer(s)",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--trailer",
+            "h": "add custom trailer(s)",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "-s",
-            "help": "add a Signed-off-by trailer",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "-s",
+            "h": "add a Signed-off-by trailer",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "-t",
-            "help": "use specified template file",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "-t",
+            "h": "use specified template file",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "-e",
-            "help": "force edit of commit",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "-e",
+            "h": "force edit of commit",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--cleanup",
-            "help": "how to strip spaces and #comments from message",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--cleanup",
+            "h": "how to strip spaces and #comments from message",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--status",
-            "help": "include status in commit message template",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--status",
+            "h": "include status in commit message template",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "-S",
-            "help": "GPG sign commit",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "-S",
+            "h": "GPG sign commit",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "-a",
-            "help": "commit all changed files",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "-a",
+            "h": "commit all changed files",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "-i",
-            "help": "add specified files to index for commit",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "-i",
+            "h": "add specified files to index for commit",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--interactive",
-            "help": "interactively add files",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--interactive",
+            "h": "interactively add files",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "-p",
-            "help": "interactively add changes",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "-p",
+            "h": "interactively add changes",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "-o",
-            "help": "commit only specified files",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "-o",
+            "h": "commit only specified files",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "-n",
-            "help": "bypass pre-commit and commit-msg hooks",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "-n",
+            "h": "bypass pre-commit and commit-msg hooks",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--dry-run",
-            "help": "show what would be committed",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--dry-run",
+            "h": "show what would be committed",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--short",
-            "help": "show status concisely",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--short",
+            "h": "show status concisely",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--branch",
-            "help": "show branch information",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--branch",
+            "h": "show branch information",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--ahead-behind",
-            "help": "compute full ahead/behind values",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--ahead-behind",
+            "h": "compute full ahead/behind values",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--porcelain",
-            "help": "machine-readable output",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--porcelain",
+            "h": "machine-readable output",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--long",
-            "help": "show status in long format (default)",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--long",
+            "h": "show status in long format (default)",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "-z",
-            "help": "terminate entries with NUL",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "-z",
+            "h": "terminate entries with NUL",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--amend",
-            "help": "amend previous commit",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--amend",
+            "h": "amend previous commit",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--no-post-rewrite",
-            "help": "bypass post-rewrite hook",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--no-post-rewrite",
+            "h": "bypass post-rewrite hook",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "-u",
-            "help": "show untracked files, optional modes: all, normal, no. (Default: all)",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "-u",
+            "h": "show untracked files, optional modes: all, normal, no. (Default: all)",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--pathspec-from-file",
-            "help": "read pathspec from file",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--pathspec-from-file",
+            "h": "read pathspec from file",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           },
           {
-            "command": "--pathspec-file-nul",
-            "help": "with --pathspec-from-file, pathspec elements are separated with NUL character",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--pathspec-file-nul",
+            "h": "with --pathspec-from-file, pathspec elements are separated with NUL character",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           }
         ]
       },
       {
-        "command": "status",
-        "help": "Show the working tree status",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
+        "c": "status",
+        "h": "Show the working tree status",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": []
       },
       {
-        "command": "branch",
-        "help": "List, create, or delete branches",
-        "compile_function": "git_branch",
-        "addon_with_compile_function": [],
-        "next_always": true,
-        "next": "git_branch"
+        "c": "branch",
+        "h": "List, create, or delete branches",
+        "cf": "git_branch",
+        "awcf": [
+          { "c": "-d", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          { "c": "-D", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          { "c": "-a", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+          { "c": "-m", "h": "", "cf": "", "awcf": [], "na": false, "n": [] }
+        ],
+        "na": true,
+        "n": "git_branch"
       },
       {
-        "command": "push",
-        "help": "Update remote refs along with associated objects",
-        "compile_function": "git_remote",
-        "addon_with_compile_function": [],
-        "next_always": true,
-        "next": "git_branch"
+        "c": "push",
+        "h": "Update remote refs along with associated objects",
+        "cf": "git_remote",
+        "awcf": [],
+        "na": true,
+        "n": "git_branch"
       },
       {
-        "command": "pull",
-        "help": "Fetch from and integrate with another repository or a local branch",
-        "compile_function": "git_remote",
-        "addon_with_compile_function": [],
-        "next_always": true,
-        "next": "git_branch"
+        "c": "pull",
+        "h": "Fetch from and integrate with another repository or a local branch",
+        "cf": "git_remote",
+        "awcf": [],
+        "na": true,
+        "n": "git_branch"
       },
       {
-        "command": "checkout",
-        "help": "",
-        "compile_function": "git_branch",
-        "addon_with_compile_function": [],
-        "next_always": true,
-        "next": [
+        "c": "checkout",
+        "h": "",
+        "cf": "git_branch",
+        "awcf": [
           {
-            "command": "name_branch",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "-b",
+            "h": "create and checkout a new branch",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "-B",
+            "h": "create/reset and checkout a branch",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "-l",
+            "h": "create reflog for new branch",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--guess",
+            "h": "second guess 'git checkout <no-such-branch>'",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--overlay",
+            "h": "use overlay mode (default)",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "-q",
+            "h": "suppress progress reporting",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--recurse-submodules",
+            "h": "control recursive updating of submodules",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--progress",
+            "h": "force progress reporting",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "-m",
+            "h": "perform a 3-way merge with the new branch",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--conflict",
+            "h": "conflict style (merge, diff3, or zdiff3)",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "-d",
+            "h": "detach HEAD at named commit",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "-t",
+            "h": "set branch tracking configuration",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "-f",
+            "h": "force checkout (throw away local modifications)",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--orphan",
+            "h": "new unparented branch",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--overwrite-ignore",
+            "h": "update ignored files (default)",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--ignore-other-worktrees",
+            "h": "do not check if another worktree is holding the given ref",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "-2",
+            "h": "checkout our version for unmerged files",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "-3",
+            "h": "checkout their version for unmerged files",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "-p",
+            "h": "select hunks interactively",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--ignore-skip-worktree-bits",
+            "h": "do not limit pathspecs to sparse entries only",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--pathspec-from-file",
+            "h": "read pathspec from file",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--pathspec-file-nul",
+            "h": "with --pathspec-from-file, pathspec elements are separated with NUL character",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--quiet",
+            "h": "suppress progress reporting",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--merge",
+            "h": "perform a 3-way merge with the new branch",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--detach",
+            "h": "detach HEAD at named commit",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--track",
+            "h": "set branch tracking configuration",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--force",
+            "h": "force checkout (throw away local modifications)",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--ours",
+            "h": "checkout our version for unmerged files",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--theirs",
+            "h": "checkout their version for unmerged files",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          },
+          {
+            "c": "--patch",
+            "h": "select hunks interactively",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
+          }
+        ],
+        "na": true,
+        "n": [
+          {
+            "c": "name_branch",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           }
         ]
       },
+      { "c": "revert", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
       {
-        "command": "revert",
-        "help": "",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
-      },
-      {
-        "command": "remote",
-        "help": "",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": [
+        "c": "remote",
+        "h": "",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": [
           {
-            "command": "add",
-            "help": "",
-            "compile_function": "git_remote",
-            "addon_with_compile_function": [],
-            "next_always": true,
-            "next": "git_repos_url"
+            "c": "add",
+            "h": "",
+            "cf": "git_remote",
+            "awcf": [],
+            "na": true,
+            "n": "git_repos_url"
           },
           {
-            "command": "set-url",
-            "help": "",
-            "compile_function": "git_remote",
-            "addon_with_compile_function": [],
-            "next_always": true,
-            "next": "git_repos_url"
+            "c": "set-url",
+            "h": "",
+            "cf": "git_remote",
+            "awcf": [],
+            "na": true,
+            "n": "git_repos_url"
           },
-          {
-            "command": "-v",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          }
+          { "c": "-v", "h": "", "cf": "", "awcf": [], "na": false, "n": [] }
         ]
       },
       {
-        "command": "config",
-        "help": "",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": [
+        "c": "config",
+        "h": "",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": [
           {
-            "command": "--global",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": [
+            "c": "--global",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": [
               {
-                "command": "user.name",
-                "help": "",
-                "compile_function": "",
-                "addon_with_compile_function": [],
-                "next_always": false,
-                "next": [
+                "c": "user.name",
+                "h": "",
+                "cf": "",
+                "awcf": [],
+                "na": false,
+                "n": [
                   {
-                    "command": "\"YourName\"",
-                    "help": "",
-                    "compile_function": "",
-                    "addon_with_compile_function": [],
-                    "next_always": false,
-                    "next": []
+                    "c": "\"YourName\"",
+                    "h": "",
+                    "cf": "",
+                    "awcf": [],
+                    "na": false,
+                    "n": []
                   }
                 ]
               },
               {
-                "command": "user.email",
-                "help": "",
-                "compile_function": "",
-                "addon_with_compile_function": [],
-                "next_always": false,
-                "next": [
+                "c": "user.email",
+                "h": "",
+                "cf": "",
+                "awcf": [],
+                "na": false,
+                "n": [
                   {
-                    "command": "\"youremail@example.com\"",
-                    "help": "",
-                    "compile_function": "",
-                    "addon_with_compile_function": [],
-                    "next_always": false,
-                    "next": []
+                    "c": "\"youremail@example.com\"",
+                    "h": "",
+                    "cf": "",
+                    "awcf": [],
+                    "na": false,
+                    "n": []
                   }
                 ]
               },
               {
-                "command": "user.username",
-                "help": "",
-                "compile_function": "",
-                "addon_with_compile_function": [],
-                "next_always": false,
-                "next": [
+                "c": "user.username",
+                "h": "",
+                "cf": "",
+                "awcf": [],
+                "na": false,
+                "n": [
                   {
-                    "command": "\"username\"",
-                    "help": "",
-                    "compile_function": "",
-                    "addon_with_compile_function": [],
-                    "next_always": false,
-                    "next": []
+                    "c": "\"username\"",
+                    "h": "",
+                    "cf": "",
+                    "awcf": [],
+                    "na": false,
+                    "n": []
                   }
                 ]
               }
@@ -2862,114 +2787,65 @@
           }
         ]
       },
+      { "c": "diff", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
       {
-        "command": "diff",
-        "help": "",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
-      },
-      {
-        "command": "fetch",
-        "help": "Download objects and refs from another repository",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": [
+        "c": "fetch",
+        "h": "Download objects and refs from another repository",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": [
           {
-            "command": "--dry-run",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
+            "c": "--dry-run",
+            "h": "",
+            "cf": "",
+            "awcf": [],
+            "na": false,
+            "n": []
           }
         ]
       },
       {
-        "command": "merge",
-        "help": "Join two or more development histories together",
-        "compile_function": "git_branch",
-        "addon_with_compile_function": [],
-        "next_always": true,
-        "next": []
+        "c": "merge",
+        "h": "Join two or more development histories together",
+        "cf": "git_branch",
+        "awcf": [],
+        "na": true,
+        "n": []
       },
-      {
-        "command": "--help",
-        "help": "",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": []
-      }
+      { "c": "--help", "h": "", "cf": "", "awcf": [], "na": false, "n": [] }
     ]
   },
+  { "c": "add", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
   {
-    "command": "add",
-    "help": "",
-    "compile_function": "",
-    "addon_with_compile_function": [],
-    "next_always": false,
-    "next": []
-  },
-  {
-    "command": "ng",
-    "help": "",
-    "compile_function": "",
-    "addon_with_compile_function": [],
-    "next_always": false,
-    "next": [
+    "c": "ng",
+    "h": "",
+    "cf": "",
+    "awcf": [],
+    "na": false,
+    "n": [
       {
-        "command": "new",
-        "help": "",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": [
-          {
-            "command": "my-app",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          }
+        "c": "new",
+        "h": "",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": [
+          { "c": "my-app", "h": "", "cf": "", "awcf": [], "na": false, "n": [] }
         ]
       },
       {
-        "command": "serve",
-        "help": "",
-        "compile_function": "",
-        "addon_with_compile_function": [],
-        "next_always": false,
-        "next": [
-          {
-            "command": "--open",
-            "help": "",
-            "compile_function": "",
-            "addon_with_compile_function": [],
-            "next_always": false,
-            "next": []
-          }
+        "c": "serve",
+        "h": "",
+        "cf": "",
+        "awcf": [],
+        "na": false,
+        "n": [
+          { "c": "--open", "h": "", "cf": "", "awcf": [], "na": false, "n": [] }
         ]
       }
     ]
   },
-  {
-    "command": "addf",
-    "help": "",
-    "compile_function": "",
-    "addon_with_compile_function": [],
-    "next_always": false,
-    "next": []
-  },
-  {
-    "command": "reload",
-    "help": "",
-    "compile_function": "",
-    "addon_with_compile_function": [],
-    "next_always": false,
-    "next": []
-  }
+  { "c": "addf", "h": "", "cf": "", "awcf": [], "na": false, "n": [] },
+  { "c": "reload", "h": "", "cf": "", "awcf": [], "na": false, "n": [] }
 ]

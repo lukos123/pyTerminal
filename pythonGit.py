@@ -110,6 +110,8 @@ def app():
                     custom_functions.add_new_command(command)
                 elif command[0] == 'addf':
                     custom_functions.add_new_command_f(command)
+                elif command[0] == 'settings':
+                    custom_functions.open_settings()
                 elif command[0] == 'exit':
                     quit()
                 elif command[0] == 'reload':

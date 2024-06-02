@@ -76,9 +76,14 @@ def python_library():
     return library.copy()
 
 
+def next():
+    return []
+
+
 functions = {
     "git_branch": git_branch,
     "git_repos_url": git_repos_url,
     "python_library": python_library,
-    "git_remote": git_remote
+    "git_remote": git_remote,
+    "next": next
 }

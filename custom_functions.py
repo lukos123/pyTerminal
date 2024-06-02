@@ -17,6 +17,10 @@ def on_rm_error(func, path, exc_info):
     os.unlink(path)
 
 
+def open_settings():
+    os.system(f"start {PATH}/bin/editCommands.exe {PATH}")
+
+
 def ls(command, now_directory, minus):
     dirs = []
     files = []

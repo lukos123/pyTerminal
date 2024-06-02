@@ -77,7 +77,7 @@ class MyCompleter(Completer):
 
                 for i in arr:
                     # temp_i = i
-                    if t.next_always == i or isinstance(i, list):
+                    if t.next_always == i or isinstance(i, list) or isinstance(i, str):
                         continue
                     command = i[t.command]
 
@@ -184,6 +184,7 @@ class MyCompleter(Completer):
                             [f"{command} [{help}]", -len(current_word)])
                     else:
                         find = True
+
                         if i[t.next] or i[t.compile_function]:
 
                             if len(words) == nesting:
@@ -219,6 +220,11 @@ class MyCompleter(Completer):
 
                             else:
                                 # if isinstance(arr[temp_i], str):
+                                # if i[t.flags]:
+                                #     for id, r in enumerate(i[t.next]):
+                                #         i[t.next][id][t.next] = i[t.next][id][t.next] + i[t.flags]
+
+                                #         i[t.next][id][t.flags] = i[t.flags]
                                 if i[t.compile_function] != "":
 
                                     name_function = i[t.compile_function]
@@ -275,6 +281,11 @@ class MyCompleter(Completer):
                                     arr_ = code_generator(nesting+1, i[t.next], current_word,
                                                           text_before_cursor, words)
                                     ready_arr = ready_arr + arr_
+                                if i[t.flags]:
+                                    for r in i[t.flags]:
+                                        ready_arr.append(
+                                            [f"{r[t.command]} [{r[t.help]}]", -len(current_word)])
+
                         else:
                             pass
 
